@@ -9,8 +9,8 @@
 locale                   : "en-US"
 title                    : "Daniel Amadori"
 title_separator          : "-"
-name                     : &name "Daniel"
-description              : &description "Personal Webpage"
+name                     : &name "Dr. Daniel Amadori"
+description              : &description "Master Degree Student in Computer Science and Engineering"
 url                      : https://danielamadori98.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "danielamadori98.github.io"
@@ -80,15 +80,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
+  name             : "Dr. Daniel Amadori"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "Master Degree Student in Computer Science and Engineering"
   location         : "Verona - Italy"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : #"http://yourfullgooglescholarurl.com"
   email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     : # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
