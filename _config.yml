@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Daniel Amadori"
 title_separator          : "-"
-name                     : &name "Dr. Daniel Amadori"
+name                     : &name "Daniel Amadori"
 description              : &description "Master Degree Student in Computer Science and Engineering"
 url                      : https://danielamadori98.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
