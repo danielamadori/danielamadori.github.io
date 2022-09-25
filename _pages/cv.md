@@ -11,8 +11,16 @@ redirect_from:
 
 Education
 ======
-* B.S. in Computer Science, University of Verona, 2022, rate 108/110
-* M.S. in Computer Science and Engineering, University of Verona, 2024 (expected)
+* M.S. in Computer Science and Engineering, University of Verona
+  * Date: 2024 (expected)
+* B.S. in Computer Science, University of Verona
+  * Date: 12/07/2022
+  * Rate: 108/110
+  * Thesis: A system for contact tracing based on BLE devices
+    * Supervisor: Prof. Graziano Pravadelli
+    * Assistant Supervisor: Post Doc. Researcher Florenc Demrozi
+    * Reserch Group: IoT4Care - CISD
+
 
 Work experience
 ======
