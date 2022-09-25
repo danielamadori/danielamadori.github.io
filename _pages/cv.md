@@ -11,17 +11,18 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Computer Science, University of Verona, 2022, rate 108/110
+* M.S. in Computer Science and Engineering, University of Verona, 2024 (expected)
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
+* 09/2021 - 08/2022: HighSchool Teacher
+  * ISS Galileo Galilei - ITT - Computer Science
+  * Subjects:
+    * Technology and Engineering of Information and Telecommunications Systems
+    * Systems and Networks
+    * Project Management and Business Organization
+    
 * Fall 2015: Research Assistant
   * Github University
   * Duties included: Merging pull requests
