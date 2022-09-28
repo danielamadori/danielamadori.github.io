@@ -13,12 +13,12 @@ Education
 ======
 * M.S. in Computer Science and Engineering, University of Verona
   * Date: 2024 (expected)
-* B.S. in Computer Science, University of Verona
+* B.S. in <a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">Computer Science, University of Verona</a>
   * Date: 12/07/2022
   * Rate: 108/110
   * Thesis: A system for contact tracing based on BLE devices
-    * Supervisor: Prof. Graziano Pravadelli
-    * Assistant Supervisor: Post Doc. Researcher Florenc Demrozi
+    * Supervisor: <a href="https://www.di.univr.it/?ent=persona&id=123" target="_blank">Prof. Graziano Pravadelli</a>
+    * Assistant Supervisor: <a href="https://sites.google.com/view/florencdemrozi" target="_blank">Post Doc. Researcher Florenc Demrozi</a>
     * Reserch Group: <a href="https://cisd.di.univr.it/area/7" target="_blank">IoT4Care - CISD</a>
 
 
