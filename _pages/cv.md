@@ -19,7 +19,7 @@ Education
   * Thesis: A system for contact tracing based on BLE devices
     * Supervisor: Prof. Graziano Pravadelli
     * Assistant Supervisor: Post Doc. Researcher Florenc Demrozi
-    * Reserch Group: IoT4Care - CISD
+    * Reserch Group: <a href="https://cisd.di.univr.it/area/7" target="_blank">IoT4Care - CISD</a>
 
 
 Work experience
