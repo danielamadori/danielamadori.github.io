@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-Bla bla bla....
+WORK IN PROGRESS....
 
-Titolo
+Title..
 ======
 
 Bla bla bla....
