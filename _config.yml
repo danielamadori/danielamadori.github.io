@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Daniel Amadori"
 title_separator          : "-"
 name                     : &name "Daniel Amadori"
-description              : &description "Mastera Degree Student in Computer Science and Engineering"
+description              : &description "Master Degree Student in Computer Science and Engineering"
 url                      : https://danielamadori98.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "danielamadori98.github.io"
@@ -193,7 +193,7 @@ collections:
 defaults:
   #_posts
   - scope:
-      path: ""
+      path: "**"
       type: posts
     values:
       layout: single
@@ -205,7 +205,7 @@ defaults:
       sitemap: false
   # _pages
   - scope:
-      path: ""
+      path: "**"
       type: pages
     values:
       layout: single
@@ -213,7 +213,7 @@ defaults:
       sitemap: false
   # _teaching
     - scope:
-        path: ""
+        path: "**"
         type: teaching
       values:
         layout: single
@@ -223,7 +223,7 @@ defaults:
         sitemap: false
   # _publications
     - scope:
-        path: ""
+        path: "**"
         type: publications
       values:
         layout: single
@@ -233,7 +233,7 @@ defaults:
         sitemap: false
   # _portfolio
     - scope:
-        path: ""
+        path: "**"
         type: portfolio
       values:
         layout: single
@@ -243,7 +243,7 @@ defaults:
         sitemap: false
   # _talks
     - scope:
-        path: ""
+        path: "**"
         type: talks
       values:
         layout: talk
