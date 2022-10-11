@@ -191,6 +191,16 @@ collections:
 
 # Defaults
 defaults:
+  # _about
+  -
+    scope:
+        path: "*"
+        type: about
+    values:
+        layout: single
+        author_profile: true
+        share: true
+        sitemap: true
   #_posts
   - 
     scope:
