@@ -223,7 +223,7 @@ defaults:
         sitemap: false
   # _publications
     - scope:
-        path: "**"
+        path: "*"
         type: publications
       values:
         layout: single
