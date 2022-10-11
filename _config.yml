@@ -213,7 +213,7 @@ defaults:
       sitemap: false
   # _teaching
     - scope:
-        path: "assets/*"
+        path: "*"
         type: teaching
       values:
         layout: single
@@ -223,7 +223,7 @@ defaults:
         sitemap: false
   # _publications
     - scope:
-        path: "assets/*"
+        path: "**"
         type: publications
       values:
         layout: single
@@ -233,7 +233,7 @@ defaults:
         sitemap: false
   # _portfolio
     - scope:
-        path: "assets/*"
+        path: "**"
         type: portfolio
       values:
         layout: single
@@ -243,7 +243,7 @@ defaults:
         sitemap: false
   # _talks
     - scope:
-        path: "assets/*"
+        path: "**"
         type: talks
       values:
         layout: talk
