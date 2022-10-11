@@ -192,7 +192,7 @@ collections:
 # Defaults
 defaults:
   #_posts
-  - scope:
+    - scope:
       path: "*"
       type: posts
     values:
@@ -204,7 +204,7 @@ defaults:
       related: true
       sitemap: false
   # _pages
-  - scope:
+    - scope:
       path: "*"
       type: pages
     values:
