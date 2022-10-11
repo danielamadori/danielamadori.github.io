@@ -224,6 +224,7 @@ defaults:
         share: true
         comments: true
         sitemap: false
+        safe: true
   # _publications
   -
     scope:
