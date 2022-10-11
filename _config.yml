@@ -194,7 +194,7 @@ defaults:
   # _about
   -
     scope:
-        path: "*"
+        path: "about.md"
         type: about
     values:
         layout: single
