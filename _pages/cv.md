@@ -9,9 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
-<h1>Education
-======<h1>
-
+Education
+======
 * M.S. in <a href="https://www.corsi.univr.it/?ent=cs&id=417" target="_blank">Computer Science and Engineering, University of Verona</a>
   * Date: 2024 (expected)
 * B.S. in <a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">Computer Science, University of Verona</a>
