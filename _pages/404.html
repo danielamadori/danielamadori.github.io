@@ -1,0 +1,58 @@
+---
+title: "Page Not Found"
+excerpt: "Page not found. Your pixels are in another canvas."
+sitemap: false
+permalink: /404.html
+---
+
+Sorry, but the page you were trying to view does not exist --- perhaps you can try searching for it below.
+
+<br>
+<p class="bold" align='center'>ERROR 404, you will be redirected in <span id="timer">5</span>seconds to <a href='index.html'>index</a>
+</p>
+<div id='progressbar'></div>
+
+<script type="text/javascript">
+  var GOOG_FIXURL_LANG = 'en';
+  var GOOG_FIXURL_SITE = '{{ site.url }}'
+</script>
+<script type="text/javascript"
+  src="//linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js">
+</script>
+
+<script>
+  function startTimer(duration){
+    var timer = duration, seconds;
+    setInterval(function () {
+      seconds = parseInt(timer % 60, 10);
+
+      document.getElementById("timer").innerHTML = seconds;
+      if (--timer < 0) {
+        timer = 0;
+      }
+    }, 1000);
+  }
+
+  function createProgressbar(duration){
+    var progressbar = document.getElementById('progressbar');
+    progressbar.className = 'progressbar';
+
+    var progressbarinner = document.createElement('div');
+    progressbarinner.className = 'inner';
+    progressbarinner.style.animationDuration = duration + 's';
+
+    progressbar.appendChild(progressbarinner);
+    progressbarinner.style.animationPlayState = 'running';
+        
+  }
+
+  window.onload = function () {
+    var duration = 5;
+    startTimer(duration - 1);
+    createProgressbar(duration);
+
+    setTimeout(function() {
+      window.location.href = "index.html";
+    }, duration * 1000);
+  } 
+</script>
