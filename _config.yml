@@ -213,43 +213,43 @@ defaults:
       sitemap: false
   # _teaching
     - scope:
-        path: "*"
+        path: "assets/*"
         type: teaching
       values:
         layout: single
         author_profile: true
-      #  share: true
+        share: true
         comments: true
         sitemap: false
   # _publications
     - scope:
-        path: "*"
+        path: "assets/*"
         type: publications
       values:
         layout: single
         author_profile: true
-      #  share: true
+        share: true
         comments: true
         sitemap: false
   # _portfolio
     - scope:
-        path: "*"
+        path: "assets/*"
         type: portfolio
       values:
         layout: single
         author_profile: true
-      #  share: true
+        share: true
         comment: true
         sitemap: false
   # _talks
     - scope:
-        path: "*"
+        path: "assets/*"
         type: talks
       values:
         layout: talk
         author_profile: true
-      #  share: true
-       sitemap: false
+        share: true
+        sitemap: false
 
 # Sass/SCSS
 sass:
