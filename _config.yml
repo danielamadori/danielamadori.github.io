@@ -216,7 +216,7 @@ defaults:
   # _teaching
   - 
     scope:
-        path: "*"
+        path: "**"
         type: teaching
     values:
         layout: single
@@ -227,7 +227,7 @@ defaults:
   # _publications
   -
     scope:
-        path: "assets/**"
+        path: "**"
         type: publications
     values:
         layout: single
