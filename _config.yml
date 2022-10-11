@@ -192,7 +192,8 @@ collections:
 # Defaults
 defaults:
   #_posts
-    - scope:
+  - 
+    scope:
       path: "*"
       type: posts
     values:
@@ -204,7 +205,8 @@ defaults:
       related: true
       sitemap: false
   # _pages
-    - scope:
+  -
+    scope:
       path: "*"
       type: pages
     values:
@@ -212,40 +214,44 @@ defaults:
       author_profile: true
       sitemap: false
   # _teaching
-    - scope:
+  - 
+    scope:
         path: "*"
         type: teaching
-      values:
+    values:
         layout: single
         author_profile: true
         share: true
         comments: true
         sitemap: false
   # _publications
-    - scope:
+  -
+    scope:
         path: "assets/**"
         type: publications
-      values:
+    values:
         layout: single
         author_profile: true
         share: true
         comments: true
         sitemap: false
   # _portfolio
-    - scope:
+    -
+    scope:
         path: "**"
         type: portfolio
-      values:
+    values:
         layout: single
         author_profile: true
         share: true
         comment: true
         sitemap: false
   # _talks
-    - scope:
+    -
+    scope:
         path: "**"
         type: talks
-      values:
+    values:
         layout: talk
         author_profile: true
         share: true
