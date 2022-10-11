@@ -236,7 +236,7 @@ defaults:
         comments: true
         sitemap: false
   # _portfolio
-    -
+  -
     scope:
         path: "**"
         type: portfolio
@@ -247,7 +247,7 @@ defaults:
         comment: true
         sitemap: false
   # _talks
-    -
+  -
     scope:
         path: "**"
         type: talks
