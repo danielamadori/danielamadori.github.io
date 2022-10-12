@@ -36,12 +36,4 @@ Work experience
 
 PDF
 ======
-<iframe style="width: 100%;
-        border:3px solid grey;
-        zoom: 0.15;
-        -moz-transform:scale(0.75);
-        -moz-transform-origin: 0 0;
-        -o-transform: scale(0.75);
-        -o-transform-origin: 0 0;
-        -webkit-transform: scale(0.75);
-        -webkit-transform-origin: 0 0; "id="iFrame" src="https://docs.google.com/document/d/e/2PACX-1vR_tIPVr1YciqA2hN45EuERQ3BnF0ueU8YaMZoeWAgN7tl3Z2pJ0mPMvSp30h9DccCo24iKT95nI8Pw/pub?embedded=true"></iframe>
+<iframe style="width: 100%;border:3px solid grey;zoom: 0.15;-moz-transform:scale(0.75);-moz-transform-origin: 0 0;-o-transform: scale(0.75);-o-transform-origin: 0 0;-webkit-transform: scale(0.75);-webkit-transform-origin: 0 0;" id="iFrame" src="https://docs.google.com/document/d/e/2PACX-1vR_tIPVr1YciqA2hN45EuERQ3BnF0ueU8YaMZoeWAgN7tl3Z2pJ0mPMvSp30h9DccCo24iKT95nI8Pw/pub?embedded=true"></iframe>
