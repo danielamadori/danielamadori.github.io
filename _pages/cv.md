@@ -39,14 +39,29 @@ Work experience
     }
 </style>
 
-<script>
-  var iframe = document.getElementById("myIframe");
-  iframe.onload = function(){
-    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-  }
+<script type="application/javascript">
+
+function resizeIFrameToFitContent( iFrame ) {
+
+    iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
+    iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+}
+
+window.addEventListener('DOMContentLoaded', function(e) {
+
+    var iFrame = document.getElementById( 'iFrame1' );
+    resizeIFrameToFitContent( iFrame );
+
+    // or, to resize all iframes:
+    var iframes = document.querySelectorAll("iframe");
+    for( var i = 0; i < iframes.length; i++) {
+        resizeIFrameToFitContent( iframes[i] );
+    }
+} );
+
 </script>
 
 
 PDF
 ======
-<iframe id="myIframe" src="https://docs.google.com/document/d/e/2PACX-1vR_tIPVr1YciqA2hN45EuERQ3BnF0ueU8YaMZoeWAgN7tl3Z2pJ0mPMvSp30h9DccCo24iKT95nI8Pw/pub?embedded=true"></iframe>
+<iframe id="iFrame1" src="https://docs.google.com/document/d/e/2PACX-1vR_tIPVr1YciqA2hN45EuERQ3BnF0ueU8YaMZoeWAgN7tl3Z2pJ0mPMvSp30h9DccCo24iKT95nI8Pw/pub?embedded=true"></iframe>
