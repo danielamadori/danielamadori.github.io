@@ -36,4 +36,4 @@ Work experience
 
 PDF
 ======
-<iframe style="width: 100%;height: 100%;border:3px solid grey;" src="https://docs.google.com/document/d/e/2PACX-1vR_tIPVr1YciqA2hN45EuERQ3BnF0ueU8YaMZoeWAgN7tl3Z2pJ0mPMvSp30h9DccCo24iKT95nI8Pw/pub?embedded=true"></iframe>
+<iframe style="width: 100%;height: 400%;border:3px solid grey;" src="https://docs.google.com/document/d/e/2PACX-1vR_tIPVr1YciqA2hN45EuERQ3BnF0ueU8YaMZoeWAgN7tl3Z2pJ0mPMvSp30h9DccCo24iKT95nI8Pw/pub?embedded=true"></iframe>
