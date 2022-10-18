@@ -194,20 +194,10 @@ collections:
 
 # Defaults
 defaults:
-  # _about
-  -
-    scope:
-        path: "about.md"
-        type: about
-    values:
-        layout: single
-        author_profile: true
-        share: true
-        sitemap: true
   #_posts
   - 
     scope:
-      path: ""
+      path: "*"
       type: posts
     values:
       layout: single
