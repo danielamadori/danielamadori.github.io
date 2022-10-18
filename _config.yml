@@ -207,7 +207,7 @@ defaults:
   #_posts
   - 
     scope:
-      path: "*"
+      path: ""
       type: posts
     values:
       layout: single
