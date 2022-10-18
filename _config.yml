@@ -194,8 +194,7 @@ collections:
 defaults:
   # _file
   - scope:
-    path: ""
-    type: file
+    path: "file/*"
   values:
     sitemap: false
   # _posts
