@@ -192,6 +192,11 @@ collections:
 
 # Defaults
 defaults:
+  # _file
+  - scope:
+    path: 'file/'
+  values:
+    sitemap: false
   # _posts
   - scope:
       path: ""
