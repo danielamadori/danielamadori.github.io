@@ -25,7 +25,7 @@ Education
 Work experience
 ======
  
-* 10/2022 - now:&emsp;<a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=163942&aa=2022/2023&discr=null&discrCd=null" target="_blank">Tutor of Programming II</a> corse B.S. in Computer Scince
+* 10/2022 - Now:&emsp;<a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=163942&aa=2022/2023&discr=null&discrCd=null" target="_blank">Tutor of Programming II</a> corse B.S. in Computer Scince
   * University of Verona
 * 09/2021 - 08/2022:&emsp;HighSchool Teacher
   * ISS Galileo Galilei - ITT - Computer Science
@@ -34,6 +34,8 @@ Work experience
     * Systems and Networks
     * Project Management and Business Organization
 
+<!--
 PDF
 ======
 <iframe style="width: 80%;height: 600px;border:3px solid grey;background-color: white;" src="https://docs.google.com/document/d/e/2PACX-1vR_tIPVr1YciqA2hN45EuERQ3BnF0ueU8YaMZoeWAgN7tl3Z2pJ0mPMvSp30h9DccCo24iKT95nI8Pw/pub?embedded=true"></iframe>
+-->
