@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I was born in Bolzano in South Tyrol (Italy), I started studying Computer Science early at the age of 14 in high school, I attended the ITT Galileo Galilei of Bolzano.
+I was born in Bolzano in South Tyrol (Italy), I started studying Computer Science early at the age of 14 in high school.
 
 I obtain a Bachelor’s degree (B.Sc.) in Computer Science at the University of Verona the 12/07/2022 with a grade of 108/110.
 
