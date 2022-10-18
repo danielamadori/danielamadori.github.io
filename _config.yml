@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Daniel Amadori"
+title                    : "Your Name / Site Title"
 title_separator          : "-"
-name                     : &name "Daniel Amadori"
-description              : &description "Master Degree Student in Computer Science and Engineering"
-url                      : https://danielamadori98.github.io
+name                     : &name "Your Name"
+description              : &description "personal description"
+url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "danielamadori98.github.io"
+repository               : "academicpages/academicpages.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -73,43 +73,43 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-analytics" # false (default), "google", "google-universal", "custom"
+  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :  "G-22L2MZ212M"
+    tracking_id          :
 
 
 # Site Author
 author:
-  name             : "Daniel Amadori"
-  avatar           : "profile.jpg"
-  bio              : "Master Degree Student in Computer Science and Engineering"
-  location         : "Bolzano/Verona - Italy"
+  name             : "Your Sidebar Name"
+  avatar           : "profile.png"
+  bio              : "Your biography for the left-hand sidebar"
+  location         : "Location"
   employer         :
-  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : #"http://yourfullgooglescholarurl.com"
-  email            : "daniel.amadori@outlook.it"
-  researchgate     : # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              : "https://cisd.di.univr.it/profile/24/"
+  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  googlescholar    : "http://yourfullgooglescholarurl.com"
+  email            :
+  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           : "danielamadori98"
+  github           : "academicpages"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "daniel-amadori"
-  orcid            : #"http://orcid.org/yourorcidurl"
+  linkedin         :
+  orcid            : "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : #"replacethistwitterhandle"
+  twitter          : "replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
@@ -175,9 +175,6 @@ kramdown:
 
 # Collections
 collections:
-  about:
-    output: true
-    permalink: /:collection/:path/
   teaching:
     output: true
     permalink: /:collection/:path/
@@ -194,10 +191,9 @@ collections:
 
 # Defaults
 defaults:
-  #_posts
-  - 
-    scope:
-      path: "*"
+  # _posts
+  - scope:
+      path: ""
       type: posts
     values:
       layout: single
@@ -206,60 +202,48 @@ defaults:
       comments: true
       share: true
       related: true
-      sitemap: true
   # _pages
-  -
-    scope:
-      path: "*"
+  - scope:
+      path: ""
       type: pages
     values:
       layout: single
       author_profile: true
-      sitemap: false
   # _teaching
-  - 
-    scope:
-        path: "**"
-        type: teaching
+  - scope:
+      path: ""
+      type: teaching
     values:
-        layout: single
-        author_profile: true
-        share: true
-        comments: true
-        sitemap: false
-        safe: true
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   # _publications
-  -
-    scope:
-        path: "**"
-        type: publications
+  - scope:
+      path: ""
+      type: publications
     values:
-        layout: single
-        author_profile: true
-        share: true
-        comments: true
-        sitemap: false
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   # _portfolio
-  -
-    scope:
-        path: "**"
-        type: portfolio
+  - scope:
+      path: ""
+      type: portfolio
     values:
-        layout: single
-        author_profile: true
-        share: true
-        comment: true
-        sitemap: false
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
   # _talks
-  -
-    scope:
-        path: "**"
-        type: talks
+  - scope:
+      path: ""
+      type: talks
     values:
-        layout: talk
-        author_profile: true
-        share: true
-        sitemap: false
+      layout: talk
+      author_profile: true
+      share: true
 
 # Sass/SCSS
 sass:

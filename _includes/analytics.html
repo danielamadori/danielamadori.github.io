@@ -1,8 +1,6 @@
 {% if site.analytics.provider and page.analytics != false %}
 
 {% case site.analytics.provider %}
-{% when "google-analytics" %}
-  {% include /analytics-providers/google-analytics.html %}
 {% when "google" %}
   {% include /analytics-providers/google.html %}
 {% when "google-universal" %}

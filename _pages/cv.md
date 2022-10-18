@@ -11,31 +11,49 @@ redirect_from:
 
 Education
 ======
-* M.S. in <a href="https://www.corsi.univr.it/?ent=cs&id=417" target="_blank">Computer Science and Engineering, University of Verona</a>
-  * Date: 2024 (expected)
-* B.S. in <a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">Computer Science, University of Verona</a>
-  * Date: 12/07/2022
-  * Rate: 108/110
-  * Thesis: A system for contact tracing based on BLE devices
-    * Supervisor: <a href="https://www.di.univr.it/?ent=persona&id=123" target="_blank">Prof. Graziano Pravadelli</a>
-    * Assistant Supervisor: <a href="https://sites.google.com/view/florencdemrozi" target="_blank">Post Doc. Researcher Florenc Demrozi</a>
-    * Reserch Group: <a href="https://cisd.di.univr.it/area/7" target="_blank">IoT4Care - CISD</a>
-
+* B.S. in GitHub, GitHub University, 2012
+* M.S. in Jekyll, GitHub University, 2014
+* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
 
 Work experience
 ======
- 
-* 10/2022 - Now:&emsp;&emsp;   <a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=163942&aa=2022/2023&discr=null&discrCd=null" target="_blank">Tutor of Programming II</a> corse B.S. in Computer Scince
-  * University of Verona
-* 09/2021 - 08/2022:&emsp;HighSchool Teacher
-  * ISS Galileo Galilei - ITT - Computer Science
-  * Subjects:
-    * Technology and Engineering of Information and Telecommunications Systems
-    * Systems and Networks
-    * Project Management and Business Organization
+* Summer 2015: Research Assistant
+  * Github University
+  * Duties included: Tagging issues
+  * Supervisor: Professor Git
 
-<!--
-PDF
+* Fall 2015: Research Assistant
+  * Github University
+  * Duties included: Merging pull requests
+  * Supervisor: Professor Hub
+  
+Skills
 ======
-<iframe style="width: 80%;height: 600px;border:3px solid grey;background-color: white;" src="https://docs.google.com/document/d/e/2PACX-1vR_tIPVr1YciqA2hN45EuERQ3BnF0ueU8YaMZoeWAgN7tl3Z2pJ0mPMvSp30h9DccCo24iKT95nI8Pw/pub?embedded=true"></iframe>
--->
+* Skill 1
+* Skill 2
+  * Sub-skill 2.1
+  * Sub-skill 2.2
+  * Sub-skill 2.3
+* Skill 3
+
+Publications
+======
+  <ul>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+  
+Talks
+======
+  <ul>{% for post in site.talks %}
+    {% include archive-single-talk-cv.html %}
+  {% endfor %}</ul>
+  
+Teaching
+======
+  <ul>{% for post in site.teaching %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+  
+Service and leadership
+======
+* Currently signed in to 43 different slack teams
