@@ -216,7 +216,7 @@ defaults:
       comments: true
       share: true
       related: true
-      sitemap: false
+      sitemap: true
   # _pages
   -
     scope:
