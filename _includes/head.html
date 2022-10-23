@@ -19,3 +19,22 @@
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
 
 <meta http-equiv="cleartype" content="on">
+
+
+
+<meta name="keywords, description" content="{{ author.name }}">
+{% if author.bio %}
+<meta name="keywords, description" content="{{ author.bio }}">
+{% endif %}
+{% if author.uri %}
+<meta name="keywords, description" content="{{ author.uri }}">
+{% endif %}
+{% if author.email %}
+<meta name="keywords, description" content="{{ author.email }}">
+{% endif %}
+{% if author.linkedin %}
+<meta name="keywords, description" content="https://www.linkedin.com/in/{{ author.linkedin }}">
+{% endif %}
+{% if author.github %}
+<meta name="keywords, description" content="https://github.com/{{ author.github }}">
+{% endif %}
