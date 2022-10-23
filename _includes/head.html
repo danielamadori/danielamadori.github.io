@@ -21,16 +21,18 @@
 <meta http-equiv="cleartype" content="on">
 
 
-
+{% if page.author and site.data.authors[page.author] %}
+  {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
+{% endif %}
 <meta name="keywords, description" content="{{ author.name }}">
 {% if author.bio %}
 <meta name="keywords, description" content="{{ author.bio }}">
 {% endif %}
-{% if author.uri %}
-<meta name="keywords, description" content="{{ author.uri }}">
-{% endif %}
 {% if author.email %}
 <meta name="keywords, description" content="{{ author.email }}">
+{% endif %}
+{% if author.uri %}
+<meta name="keywords, description" content="{{ author.uri }}">
 {% endif %}
 {% if author.linkedin %}
 <meta name="keywords, description" content="https://www.linkedin.com/in/{{ author.linkedin }}">
