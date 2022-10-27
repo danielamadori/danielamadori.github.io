@@ -22,6 +22,11 @@
 
 
 {% if page.author and site.data.authors[page.author] %}
-  {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
+  {% assign author = site.data.authors[page.author] %}
+{% else %}
+  {% assign author = site.author %}
 {% endif %}
-<meta name="keywords, description" content="{{ author.name }}{% if author.bio %}, {{ author.bio }}{% endif %}{% if author.email %}, {{ author.email }}{% endif %}{% if author.linkedin %}, Linkedin{% endif %}{% if author.github %}, Github{% endif %}, University of Verona, Univr, Università degli studi di Verona, CISD">
+
+<meta name="description" content="{{ author.name }}{% if author.bio %}, {{ author.bio }}{% endif %}{% if author.email %}, {{ author.email }}{% endif %}{% if author.linkedin %}, Linkedin{% endif %}{% if author.github %}, Github{% endif %}, University of Verona, Univr, Università degli studi di Verona, CISD">
+
+<meta name="keywords" content="{{ author.name }}{% if author.bio %}, {{ author.bio }}{% endif %}{% if author.email %}, {{ author.email }}{% endif %}{% if author.linkedin %}, Linkedin{% endif %}{% if author.github %}, Github{% endif %}, University of Verona, Univr, Università degli studi di Verona, CISD">
