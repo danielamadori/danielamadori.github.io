@@ -17,7 +17,5 @@ During the last year of university i worked as high school teacher at the same s
 * Systems and Networks
 * Project Management and Business Organization
 
-Currently I'm attending the Master’s degree (M.Sc.) in Computer Science or Engineering at the University of Verona.
-
-
-
+In 2022, I started my Master's degree (M.Sc.) in Computer Science and Engineering at the University of Verona.
+During this year I was a tutor in the same university for the B.Sc. in Computer Science, teaching Programming 2 and Software Engineering.
