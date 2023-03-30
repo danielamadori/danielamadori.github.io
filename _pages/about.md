@@ -8,14 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-I was born in Bolzano in South Tyrol (Italy), I started studying Computer Science early at the age of 14 in high school.
+I am a computer scientist born in Bolzano, South Tyrol. I discovered my passion for computer science at a young age and started studying it in high school at just 14 years old.
 
-I obtain a Bachelor’s degree (B.Sc.) in Computer Science at the University of Verona the 12/07/2022 with a grade of 108/110.
+I obtained my Bachelor's degree in Computer Science from the University of Verona in July 2022, with a grade of 108/110.
+During my final year of the B.Sc. program, I also worked as a teacher at the same high school where I graduated.
 
-During the last year of university i worked as high school teacher at the same school where I graduated. I tougth the following subjects:
-* Technology and Engineering of Information and Telecommunications Systems
-* Systems and Networks
-* Project Management and Business Organization
-
-In 2022, I started my Master's degree (M.Sc.) in Computer Science and Engineering at the University of Verona.
-During this year I was a tutor in the same university for the B.Sc. in Computer Science, teaching Programming II and Software Engineering.
+Currently, I am pursuing my Master's degree (M.Sc.) in Computer Science and Engineering at the University of Verona.
+During my studies, I have gained experience as a tutor, teaching Programming II and Software Engineering to undergraduate students in the B.Sc. in Computer Science and Bioinformatics program at the same university.
