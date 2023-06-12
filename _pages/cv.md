@@ -24,7 +24,7 @@ Education
 
 Work experience
 ======
-* 03/2023 - Now: Tutor of <a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=163941&aa=2022/2023&discr=null&discrCd=null" target="_blank">Software Engineering</a>
+* 03/2023 - 06/2023: Tutor of <a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=163941&aa=2022/2023&discr=null&discrCd=null" target="_blank">Software Engineering</a>
   * B.S. in Computer Science, Bioinformatics - University of Verona 
 * 10/2022 - 02/2023: Tutor of <a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=163942&aa=2022/2023&discr=null&discrCd=null" target="_blank">Programming II</a>
   * B.S. in Computer Science - University of Verona
