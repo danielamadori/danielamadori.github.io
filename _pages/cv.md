@@ -13,6 +13,14 @@ Education
 ======
 * M.S. in <a href="https://www.corsi.univr.it/?ent=cs&id=417" target="_blank">Computer Science and Engineering, University of Verona</a>
   * Date: 2024 (expected)
+* M.S. - Erasmus in <a href="https://www2.ulpgc.es/plan-estudio/5005" target="_blank">Intelligent Systems and Numerical Applications in Engineering, Universidad de Las Palmas de Gran Canaria</a>
+  * 9/2023 - 2/2024
+    ** Optimal Engineering Design
+    ** Numeric Method for Computational Engineering
+    ** Data Science Engineering
+    ** Computational intelligence
+    ** Programming and Prototyping
+
 * B.S. in <a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">Computer Science, University of Verona</a>
   * Date: 12/07/2022
   * Rate: 108/110
