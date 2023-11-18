@@ -19,7 +19,7 @@ I'm a passionate computer scientist born in Bolzano, South Tyrol, with a knack f
 - :gear: **Git statistics:**
 
     <img height="205px" width ="400px" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=danielamadori98&hide=html&layout=compact&theme=highcontrast" />
-  ![](./profile-3d-contrib/profile-night-rainbow.svg)
+  ![](profile-3d-contrib/profile-night-rainbow.svg)
 
 
 
