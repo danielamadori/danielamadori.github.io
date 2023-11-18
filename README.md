@@ -16,11 +16,9 @@ I'm a passionate computer scientist born in Bolzano, South Tyrol, with a knack f
   - Tutor of Programming II (10/2022 - 02/2023) - University of Verona
   - High School Teacher (09/2021 - 08/2022) - ISS Galileo Galilei - ITT - Computer Science
 
-<details close="true">
-  <summary><b>:gear: &nbsp;Git statistics</b></summary>
-  <img height="209px" width ="400px" src="https://github-readme-stats-sigma-five.vercel.app/api?username=ledjolleshaj&show_icons=true&theme=highcontrast" />
-  <img height="205px" width ="400px" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=ledjolleshaj&hide=html&layout=compact&theme=highcontrast" />
+<summary><b>:gear: &nbsp;Git statistics</b></summary>
+<img height="209px" width ="400px" src="https://github-readme-stats-sigma-five.vercel.app/api?username=danielamadori98&show_icons=true&theme=highcontrast" />
+<img height="205px" width ="400px" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=danielamadori98&hide=html&layout=compact&theme=highcontrast" />
   
  ![](./profile-3d-contrib/profile-night-rainbow.svg)
  
- </details>
