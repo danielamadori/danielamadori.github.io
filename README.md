@@ -17,12 +17,9 @@ I'm a passionate computer scientist born in Bolzano, South Tyrol, with a knack f
   - High School Teacher (09/2021 - 08/2022) - ISS Galileo Galilei - ITT - Computer Science
 
 <summary><b>:gear: &nbsp;Git statistics</b></summary>
-<img height="209px" width ="400px" src="https://github-readme-stats-sigma-five.vercel.app/api?username=danielamadori98&show_icons=true&theme=highcontrast" />
 <img height="205px" width ="400px" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=danielamadori98&hide=html&layout=compact&theme=highcontrast" />
   
  ![](./profile-3d-contrib/profile-night-rainbow.svg)
 
- [![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&count_private=true&hide=contribs,prs&theme=radical)](https://github.com/yourusername)
-[![My GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=yourusername&theme=dark&hide_border=true)](https://github.com/yourusername)
-[![My GitHub Contributions](https://github-readme-stats.vercel.app/api/wakatime?username=yourusername)](https://github.com/yourusername)
+
 
