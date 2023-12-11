@@ -18,7 +18,7 @@ Education
     * Optimal Engineering Design
     * Numeric Method for Computational Engineering
     * Data Science Engineering
-    * Computational intelligence
+    * Computational Intelligence
     * Programming and Prototyping
 
 * B.S. in <a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">Computer Science, University of Verona</a>
