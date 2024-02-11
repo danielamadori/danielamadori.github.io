@@ -15,7 +15,7 @@ Education
   * Date: 2024 (expected)
 * M.S. (Erasmus) in <a href="https://www2.ulpgc.es/plan-estudio/5005" target="_blank">Intelligent Systems and Numerical Applications in Engineering, ULPGC</a>
   * 9/2023 - 2/2024
-    * Data Science Engineering
+    * Data Science in Engineering
     * Computational Intelligence
     * Programming and Prototyping
 
