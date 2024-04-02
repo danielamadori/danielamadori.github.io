@@ -41,7 +41,7 @@ Work experience
 * 10/2022 - 02/2023: Tutor of <a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=163942&aa=2022/2023&discr=null&discrCd=null" target="_blank">Programming II</a>
   * B.S. in Computer Science - University of Verona
 * 09/2021 - 08/2022: HighSchool Teacher
-  * <a href="https://www.iisgalilei.eu/" target="_blank">ISS Galileo Galilei</a> - ITT - Computer Science
+  * <a href="https://www.iisgalilei.eu" target="_blank">ISS Galileo Galilei</a> - ITT - Computer Science
   * Subjects:
     * Technology and Engineering of Information and Telecommunications Systems
     * Systems and Networks
