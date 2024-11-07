@@ -30,8 +30,12 @@ Education
 
 Work experience
 ======
-* 10/2024 - now: Tutor of <a href="https://www.corsi.univr.it/?ent=cs&id=419&menu=studiare&tab=insegnamenti&codiceCs=S23&codins=10030&crediti=12.0&aa=2024/2025" target="_blank">Programming</a>
+* 11/2024 - 02/2023: Tutor of <a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=189212&aa=2024/2025" target="_blank">Programming II</a>
+    * B.S. in Computer Science - University of Verona
+* 11/2024 - now: Tutor of <a href="https://www.corsi.univr.it/?ent=cs&id=419&menu=studiare&tab=insegnamenti&codiceCs=S23&codins=10030&crediti=12.0&aa=2024/2025" target="_blank">Programming</a>
   * B.S. in Bioinformatics - University of Verona
+* 10/2024 - now: Expert Educator - Integrated digital teaching and digital transition education for school staff
+  * G.Verdi (Egna, South Tyrol) 
 * 04/2024 - 06/2024: Tutor of <a href="https://www.corsi.univr.it/?ent=cs&id=419&menu=studiare&tab=insegnamenti&codiceCs=S23&codins=4S008227&crediti=12.0&aa=2023/2024" target="_blank">Software Engineering</a>
   * B.S. in Bioinformatics - University of Verona
 * 03/2024 - 06/2024: Tutor of <a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=176679&aa=2023/2024&discr=null&discrCd=null" target="_blank">Software Engineering</a>
