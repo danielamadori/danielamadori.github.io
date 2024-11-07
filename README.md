@@ -12,6 +12,7 @@
 - 💼 **Work Experience:**
   - (11/2024 - now) Tutor of Programming II - B.S. in Computer Science - University of Verona 
   - (11/2024 - now) Tutor of Programming - B.S. in Bioinformatics - University of Verona
+  - (10/2024 - now) Expert Educator - Integrated digital teaching and digital transition education for school staff
   - (04/2024 - 06/2024) Tutor of Software Engineering - B.S. in Bioinformatics - University of Verona
   - (03/2024 - 06/2024) Tutor of Software Engineering - B.S. in Computer Science - University of Verona
   - (03/2024 - 07/2024) Tutor of Programming with laboratory - B.S. in Applied Mathematics - University of Verona
