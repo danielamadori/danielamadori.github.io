@@ -1,6 +1,6 @@
 # Hello, I'm Daniel 👋 
 
-🖥️ Computer Scientist | 📍 Bolzano - Verona | [WebSite](https://danielamadori98.github.io) | [Linkedin]()
+🖥️ Computer Scientist | 📍 Bolzano - Verona | [WebSite](https://danielamadori.github.io) | [Linkedin]()
 
 ## About Me
 
@@ -24,7 +24,7 @@
 
 - :gear: **Git statistics:**
 
-    <img height="205px" width ="400px" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=danielamadori98&hide=html&layout=compact&theme=highcontrast" />
+    <img height="205px" width ="400px" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=danielamadori&hide=html&layout=compact&theme=highcontrast" />
 
     ![](profile-3d-contrib/profile-night-rainbow.svg)
 
