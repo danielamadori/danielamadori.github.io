@@ -5,7 +5,7 @@
 ## About Me
 
 - 🎓 **Education:** 
-  - M.S. in Computer Science and Engineering (Expected 03/2025) - University of Verona
+  - M.S. in Computer Science and Engineering (Expected 07/2025) - University of Verona
   - M.S. (Erasmus) in Intelligent Systems and Numerical Applications in Engineering (9/2023 - 2/2024) - University of Las Palmas de Gran Canaria
   - B.S. in Computer Science (Graduated 12/07/2022) - University of Verona (Thesis: A system for contact tracing based on BLE devices)
 
@@ -24,7 +24,7 @@
 
 - :gear: **Git statistics:**
 
-    <img height="205px" width ="400px" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=danielamadori&hide=html&layout=compact&theme=highcontrast" />
+    <img height="205px" width ="400px" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=danielamadori98&hide=html&layout=compact&theme=highcontrast" />
 
     ![](profile-3d-contrib/profile-night-rainbow.svg)
 
