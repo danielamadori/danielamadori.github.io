@@ -13,6 +13,7 @@ Education
 ======
 * M.S. in <a href="https://www.corsi.univr.it/?ent=cs&id=417" target="_blank">Computer Science and Engineering, University of Verona</a>
   * Date: 17/07/2025
+  * Rate: 109/110
   * Thesis: Explaining Strategies for Expected Impacts
     * Supervisor: <a href="https://profs.scienze.univr.it/~sala/" target="_blank">Prof. Pietro Sala</a>
     * Assistant Supervisor: <a href="https://www.linkedin.com/in/emanuele-chini-53419a238/" target="_blank">Emanuele Chini</a>
