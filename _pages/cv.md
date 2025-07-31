@@ -12,7 +12,11 @@ redirect_from:
 Education
 ======
 * M.S. in <a href="https://www.corsi.univr.it/?ent=cs&id=417" target="_blank">Computer Science and Engineering, University of Verona</a>
-  * Date: 07/2025 (expected)
+  * Date: 17/07/2025
+  * Thesis: Explaining Strategies for Expected Impacts
+    * Supervisor: <a href="https://profs.scienze.univr.it/~sala/" target="_blank">Prof. Pietro Sala</a>
+    * Assistant Supervisor: <a href="https://www.linkedin.com/in/emanuele-chini-53419a238/" target="_blank">Emanuele Chini</a>
+
 * M.S. (Erasmus) in <a href="https://www2.ulpgc.es/plan-estudio/5005" target="_blank">Intelligent Systems and Numerical Applications in Engineering, ULPGC</a>
   * 9/2023 - 2/2024
     * Data Science in Engineering
@@ -30,15 +34,15 @@ Education
 
 Work experience
 ======
-* 03/2025 - now: Tutor of <a href="https://www.corsi.univr.it/?ent=cs&id=419&menu=studiare&tab=insegnamenti&codins=4S008227&idOi=189274&aa=2024/2025&discr=&discrCd" target="_blank">Software Engineering</a>
+* 03/2025 - 06/2025: Tutor of <a href="https://www.corsi.univr.it/?ent=cs&id=419&menu=studiare&tab=insegnamenti&codins=4S008227&idOi=189274&aa=2024/2025&discr=&discrCd" target="_blank">Software Engineering</a>
   * B.S. in Bioinformatics - University of Verona
-* 03/2025 - now: Tutor of <a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=189211&aa=2024/2025&discr=null&discrCd=null" target="_blank">Software Engineering</a>
+* 03/2025 - 06/2025: Tutor of <a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=189211&aa=2024/2025&discr=null&discrCd=null" target="_blank">Software Engineering</a>
   * B.S. in Computer Science - University of Verona
 * 11/2024 - 02/2025: Tutor of <a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=189212&aa=2024/2025" target="_blank">Programming II</a>
     * B.S. in Computer Science - University of Verona
 * 11/2024 - 02/2025: Tutor of <a href="https://www.corsi.univr.it/?ent=cs&id=419&menu=studiare&tab=insegnamenti&codiceCs=S23&codins=10030&crediti=12.0&aa=2024/2025" target="_blank">Programming</a>
   * B.S. in Bioinformatics - University of Verona
-* 10/2024 - now: Educator - Integrated digital teaching and digital transition education for school staff
+* 10/2024 - 04/2025: Educator - Integrated digital teaching and digital transition education for school staff
   * G.Verdi (Egna, South Tyrol) 
 * 04/2024 - 06/2024: Tutor of <a href="https://www.corsi.univr.it/?ent=cs&id=419&menu=studiare&tab=insegnamenti&codiceCs=S23&codins=4S008227&crediti=12.0&aa=2023/2024" target="_blank">Software Engineering</a>
   * B.S. in Bioinformatics - University of Verona
