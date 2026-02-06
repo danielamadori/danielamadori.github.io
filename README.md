@@ -10,6 +10,12 @@
   - B.S. in Computer Science (Graduated 12/07/2022) - University of Verona (Thesis: A system for contact tracing based on BLE devices)
 
 - 💼 **Work Experience:**
+- - (10/2025 – 06/2026) **Post-graduate Research Grant** – University of Verona  
+  *Project:* *Impact of time-varying parameters on the dimensional distribution of molecules in chemical processes: modeling and analysis*  
+  *Industrial partner:* **NEWCHEM S.p.A.** (Milan, Italy)  
+  *Supervisor:* Prof. Pietro Sala  
+  *Funding:* Ministry of Enterprises and Made in Italy (Project CB2024MIMIT_NEWCHEM)  
+  [📄 Official call (PDF)](https://docs.univr.it/documenti/Concorso/bando/bando412128.pdf)
   - (03/2025 - 06/2025) Tutor of Software Engineering - B.S. in Bioinformatics - University of Verona
   - (03/2025 - 06/2025) Tutor of Software Engineering - B.S. in Computer Science - University of Verona
   - (11/2024 - 02/2025) Tutor of Programming II - B.S. in Computer Science - University of Verona 
