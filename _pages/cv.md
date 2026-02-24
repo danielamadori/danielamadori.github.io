@@ -11,7 +11,7 @@ redirect_from:
 Education
 =========
 
-* M.S. in <a href="https://www.corsi.univr.it/?ent=cs&id=417" target="_blank">`Computer Science and Engineering, University of Verona`</a>
+* M.S. in <a href="https://www.corsi.univr.it/?ent=cs&id=417" target="_blank">Computer Science and Engineering, University of Verona</a>
 
   * Date: 17/07/2025
   * Rate: 109/110
@@ -36,11 +36,11 @@ Education
 Work experience
 ===============
 
-- (10/2025 – 06/2026) **Post-graduate Research Grant** – University of Verona
-  *Project:* *Impact of time-varying parameters on the dimensional distribution of molecules in chemical processes: modeling and analysis*
-  *Industrial partner:* **NEWCHEM S.p.A.** (Milan, Italy)
-  *Supervisor:* Prof. Pietro Sala
-  *Funding:* Ministry of Enterprises and Made in Italy <a href="https://docs.univr.it/documenti/Concorso/bando/bando412128.pdf" target="_blank">(Project CB2024MIMIT_NEWCHEM)</a>
+* 10/2025 – 06/2026 **Post-graduate Research Grant** – University of Verona
+  * *Project:* *Impact of time-varying parameters on the dimensional distribution of molecules in chemical processes: modeling and analysis*
+  * *Industrial partner:* **NEWCHEM S.p.A.** (Milan, Italy)
+  * *Supervisor:* Prof. Pietro Sala
+  * *Funding:* Ministry of Enterprises and Made in Italy <a href="https://docs.univr.it/documenti/Concorso/bando/bando412128.pdf" target="_blank">(Project CB2024MIMIT_NEWCHEM)</a>
 
 * 03/2025 - 06/2025: Tutor of <a href="https://www.corsi.univr.it/?ent=cs&id=419&menu=studiare&tab=insegnamenti&codins=4S008227&idOi=189274&aa=2024/2025&discr=&discrCd" target="_blank">Software Engineering</a>
   * B.S. in Bioinformatics - University of Verona
