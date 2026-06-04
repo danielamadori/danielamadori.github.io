@@ -82,14 +82,14 @@ analytics:
 author:
   name             : "Daniel Amadori"
   avatar           : "profile.webp"
-  bio              : "Master Degree Student in Computer Science and Engineering"
+  bio              : "Post-graduate Research Grantee in Computer Science"
   location         : "Bolzano/Verona - Italy"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : #"http://yourfullgooglescholarurl.com"
   email            : "daniel.amadori AT outlook.it"
   researchgate     : # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              : "https://cisd.di.univr.it/profile/24/"
+  uri              : "https://danielamadori.github.io"
   bitbucket        :
   codepen          :
   dribbble         :
@@ -103,7 +103,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : "daniel-amadori"
-  orcid            : #"http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0009-0003-4373-7811"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
