@@ -31,7 +31,7 @@ Education
   * Thesis: A system for contact tracing based on BLE devices
     * Supervisor: <a href="https://www.dimi.univr.it/?ent=persona&id=123" target="_blank">Prof. Graziano Pravadelli</a>
     * Assistant Supervisor: <a href="https://sites.google.com/view/florencdemrozi" target="_blank">Post Doc. Researcher Florenc Demrozi</a>
-    * Reserch Group: <a href="https://cisd.di.univr.it/area/7" target="_blank">IoT4Care - CISD</a>
+    * Research Group: <a href="https://cisd.di.univr.it/area/7" target="_blank">IoT4Care - CISD</a>
 
 Work experience
 ===============
@@ -62,8 +62,8 @@ Work experience
   * B.S. in Computer Science, Bioinformatics - University of Verona
 * 10/2022 - 02/2023: Tutor of <a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=163942&aa=2022/2023&discr=null&discrCd=null" target="_blank">Programming II</a>
   * B.S. in Computer Science - University of Verona
-* 09/2021 - 08/2022: HighSchool Teacher
-  * <a href="https://www.iisgalilei.eu" target="_blank">ISS Galileo Galilei</a> - ITT - Computer Science
+* 09/2021 - 08/2022: High School Teacher
+  * <a href="https://www.iisgalilei.eu" target="_blank">IIS Galileo Galilei</a> - ITT - Computer Science
   * Subjects:
     * Technology and Engineering of Information and Telecommunications Systems
     * Systems and Networks
