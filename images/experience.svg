@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1154" viewBox="0 0 1900 1154" font-family="Open Sans, Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Experience: education, work and publications on a single time axis">
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1094" viewBox="0 0 1900 1094" font-family="Open Sans, Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Experience: education, work and publications on a single time axis">
   <title>Experience</title>
   <desc>Education, work and publications of Daniel Amadori on the same time axis, 2018 to 2027. Publications belong to two research lines: model checking and explainable artificial intelligence.</desc>
   <defs><marker id="go" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1F497D"/></marker></defs>
-  <rect width="1900" height="1154" fill="#FFFFFF"/>
+  <rect width="1900" height="1094" fill="#FFFFFF"/>
   <text x="40" y="62" font-size="42" font-weight="bold" fill="#000000">Experience</text>
   <rect x="42" y="78" width="124" height="5" rx="2.5" fill="#4F81BD"/>
   <rect x="30" y="176" width="1840" height="254" rx="14" fill="#FAFBFC"/>
@@ -78,8 +78,8 @@
   <rect x="1286" y="977" width="101" height="22" rx="7" fill="#9AA5B1"/>
   <text x="44" y="1038" font-size="19" fill="#333333">High-school teacher </text>
   <rect x="664" y="1021" width="185" height="22" rx="7" fill="#9AA5B1"/>
-  <rect x="44" y="1088" width="34" height="16" rx="5" fill="#4F81BD"/>
-  <text x="88" y="1102" font-size="18" fill="#333333">Education</text>
-  <rect x="230" y="1088" width="34" height="16" rx="5" fill="#9AA5B1"/>
-  <text x="274" y="1102" font-size="18" fill="#333333">Work</text>
+  <rect x="1625" y="50" width="34" height="16" rx="5" fill="#4F81BD"/>
+  <text x="1671" y="64" font-size="18" fill="#333333">Education</text>
+  <rect x="1788" y="50" width="34" height="16" rx="5" fill="#9AA5B1"/>
+  <text x="1834" y="64" font-size="18" fill="#333333">Work</text>
 </svg>
