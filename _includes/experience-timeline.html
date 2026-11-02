@@ -37,7 +37,8 @@
 .xp__key--diamond{width:14px;height:14px;border-radius:2px;transform:rotate(45deg)}
 .xp__key--mc{background:var(--mc)}.xp__key--xai{background:var(--xai)}
 
-.xp__axis{position:relative;height:1.7em;margin-top:1.1em;border-bottom:1px solid #C7D0DA}
+.xp__axis{position:relative;height:1.7em;margin-top:1.1em;border-bottom:1px solid #C7D0DA;
+          margin-left:var(--label)}
 .xp__tick{position:absolute;bottom:.2em;transform:translateX(-50%);color:var(--thin);font-size:.8rem}
 .xp__tick::after{content:"";position:absolute;left:50%;bottom:-.45em;width:1px;height:.35em;background:#C7D0DA}
 .xp__cut{position:absolute;top:0;bottom:-.3em;width:0;border-left:1px dashed #C7D0DA}
@@ -95,27 +96,27 @@
 <script>
 (function () {
   var dati = {{ site.data.experience | jsonify }};
-  // l'ultimo .xp gia' nel documento e' quello di questo include: gli script
-  // vengono eseguiti in ordine, quindi i successivi non esistono ancora
+  /* l'ultimo .xp gia' nel documento e' quello di questo include: gli script */
+  /* vengono eseguiti in ordine, quindi i successivi non esistono ancora */
   var tutte = document.querySelectorAll('.xp');
   var radice = tutte[tutte.length - 1];
   if (!radice || !dati) return;
   var salta = (radice.dataset.skip || '').split(/[,\s]+/).filter(Boolean);
 
   var A = dati.axis;
-  // da "2024-03" a 2024.1666…
+  /* da "2024-03" a 2024.1666… */
   function anno(s) {
     var p = String(s).split('-');
     return +p[0] + ((+p[1] || 1) - 1) / 12;
   }
-  // posizione in percentuale, con il tratto compresso all'inizio
+  /* posizione in percentuale, con il tratto compresso all'inizio */
   function pos(t) {
     if (t <= A.break) return (t - A.start) / (A.break - A.start) * A.break_share;
     return A.break_share + (t - A.break) / (A.end - A.break) * (100 - A.break_share);
   }
   function per(t) { return pos(t).toFixed(3) + '%'; }
 
-  // ---- asse ----
+  /* ---- asse ---- */
   var asse = radice.querySelector('.xp__axis');
   A.ticks.forEach(function (a) {
     var t = document.createElement('span');
@@ -130,11 +131,11 @@
   taglio.innerHTML = '<span>⫻</span>';
   asse.appendChild(taglio);
 
-  // passo delle righe verticali di sfondo, uguale a un anno in scala
+  /* passo delle righe verticali di sfondo, uguale a un anno in scala */
   var passo = (100 - A.break_share) / (A.end - A.break);
   radice.style.setProperty('--step', passo.toFixed(3) + '%');
 
-  // ---- tooltip ----
+  /* ---- tooltip ---- */
   var tip = document.createElement('div');
   tip.className = 'xp__tip';
   radice.appendChild(tip);
@@ -205,7 +206,7 @@
     return r;
   }
 
-  // ---- corpo ----
+  /* ---- corpo ---- */
   var corpo = radice.querySelector('.xp__body');
   var griglia = document.createElement('div');
   griglia.className = 'xp__grid';
@@ -242,7 +243,7 @@
           b.setAttribute('aria-expanded', String(!aperto));
         });
         r.appendChild(b);
-        // chiuso: una barra sola per ogni turno, sulla stessa riga
+        /* chiuso: una barra sola per ogni turno, sulla stessa riga */
         var tr = document.createElement('div');
         tr.className = 'xp__track';
         v.children.forEach(function (c) {
@@ -273,7 +274,7 @@
     });
     corpo.appendChild(box);
   });
-  // la legenda tiene solo le voci che compaiono davvero
+  /* la legenda tiene solo le voci che compaiono davvero */
   var usati = {};
   radice.querySelectorAll('[class*="xp__bar--"],[class*="xp__dot--"]').forEach(function (e) {
     (e.className.match(/xp__(?:bar|dot)--([a-z-]+)/) || []).slice(1).forEach(function (k) {
