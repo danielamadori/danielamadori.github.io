@@ -23,3 +23,5 @@ Additionally, I participated in an Erasmus exchange program for one semester, at
 Between October 2025 and September 2026, I was a post-graduate research grantee in the Department of Computer Science at the University of Verona, working with Prof. Pietro Sala on interpretable machine learning models for the temporal data of chemical processes, used to understand and predict how time-varying operating parameters shape the molecular morphology of the final product. The grant was part of a project run with NEWCHEM S.p.A. and funded by the Italian Ministry of Enterprises and Made in Italy.
 
 Currently, I am a Ph.D. student in Computer Science at the University of Verona, in the XLII cycle. My research is on formally certified explanations for machine learning classifiers: rather than ranking features by importance, I characterise the region around a sample on which a prediction provably does not change, which makes explainability and robustness two sides of the same question.
+
+<img src="/images/experience.svg" alt="Timeline of studies, research grant, Ph.D. and publications" style="width:100%; max-width:720px; height:auto; display:block; margin:2em auto 0;" />

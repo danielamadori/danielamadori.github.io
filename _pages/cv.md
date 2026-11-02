@@ -8,6 +8,8 @@ redirect_from:
 ---
 {% include base_path %}
 
+<img src="/images/experience.svg" alt="Timeline of studies, research grant, Ph.D. and publications" style="width:100%; max-width:720px; height:auto; display:block; margin:0 auto 2em;" />
+
 Education
 =========
 
