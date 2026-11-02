@@ -24,4 +24,4 @@ Between October 2025 and September 2026, I was a post-graduate research grantee 
 
 Currently, I am a Ph.D. student in Computer Science at the University of Verona, in the XLII cycle. My research is on formally certified explanations for machine learning classifiers: rather than ranking features by importance, I characterise the region around a sample on which a prediction provably does not change, which makes explainability and robustness two sides of the same question.
 
-<img src="/images/experience.svg" alt="Timeline of studies, research grant, Ph.D. and publications" style="width:100%; max-width:720px; height:auto; display:block; margin:2em auto 0;" />
+<img src="/images/experience.svg" alt="Timeline of studies, research grant, Ph.D. and publications" style="width:100%; max-width:100%; height:auto; display:block; margin:2em auto 0;" />

@@ -11,6 +11,13 @@
 */
 
 @import "vendor/breakpoint/breakpoint"; // media query mixins
+
+// Override locali. Vanno PRIMA di "variables": le variabili del tema sono
+// dichiarate !default, quindi vince la prima assegnazione.
+// $x-large e' la larghezza massima del contenitore di pagina, masthead e footer.
+// A 1280px su uno schermo da 1920 restavano ~320px vuoti per lato.
+$x-large: 1600px;
+
 @import "variables";
 @import "mixins";
 @import "vendor/susy/susy";
@@ -39,3 +46,22 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* ==========================================================================
+   Override locali
+   ========================================================================== */
+
+/* _includes/sidebar.html applica la classe "sticky" alla colonna dell'autore,
+   ma in questo tema non esiste nessuna regola che la implementi: la classe c'e'
+   e non fa niente. Senza, foto e link restano in cima e sotto rimane una
+   striscia vuota alta quanto la pagina. */
+.sidebar.sticky {
+  @include breakpoint($large) {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2em;
+    max-height: calc(100vh - 4em);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
