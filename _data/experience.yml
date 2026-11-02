@@ -1,0 +1,152 @@
+# Dati della timeline "Experience" mostrata in /cv/.
+# Il disegno sta in _includes/experience-timeline.html: qui ci sono solo i fatti,
+# cosi' aggiornare una data non richiede di toccare il componente.
+#
+# Date nel formato YYYY-MM. Una voce senza "end" e con "ongoing: true" si disegna
+# aperta verso destra; una voce con il solo "start" e "point: true" e' un evento
+# senza durata.
+# kind: edu | edu-soft | edu-light | work | mc | xai
+#   mc  = model checking, xai = explainable artificial intelligence
+
+axis:
+  start: 2018.0        # inizio dell'asse
+  break: 2021.0        # fin qui gli anni sono compressi
+  end: 2027.5
+  break_share: 8       # percentuale di larghezza data al tratto compresso
+  ticks: [2018, 2021, 2022, 2023, 2024, 2025, 2026, 2027]
+
+groups:
+  - id: education
+    label: Education
+    items:
+      - name: Ph.D. in Computer Science
+        detail: XLII cycle, University of Verona
+        start: 2026-10
+        ongoing: true
+        kind: edu-soft
+      - name: Erasmus
+        detail: ULPGC, Las Palmas de Gran Canaria
+        start: 2023-09
+        end: 2024-02
+        kind: edu-light
+      - name: M.S. in Computer Science & Engineering
+        detail: University of Verona, 109/110
+        start: 2022-10
+        end: 2025-07
+        kind: edu
+        marker:
+          date: 2025-07
+          label: M.S. thesis
+          detail: Explaining Strategies for Expected Impacts
+          kind: mc
+      - name: B.S. in Computer Science
+        detail: University of Verona, 108/110
+        start: 2018-09
+        end: 2022-07
+        kind: edu
+      - name: Technical High School in Computer Science
+        detail: IIS G. Galilei, Bolzano, 2012-2018
+        start: 2018-07
+        point: true
+        kind: edu
+
+  - id: work
+    label: Work
+    items:
+      - name: Post-graduate research grant
+        detail: NEWCHEM, MIMIT, Prof. Pietro Sala
+        start: 2025-10
+        end: 2026-09
+        kind: work
+      - name: University tutoring
+        detail: 256 h in total
+        collapsible: true
+        kind: work
+        children:
+          - name: Software Engineering
+            detail: B.Sc. Bioinformatics
+            start: 2025-03
+            end: 2025-06
+          - name: Software Engineering
+            detail: B.Sc. Computer Science
+            start: 2025-03
+            end: 2025-06
+          - name: Programming II
+            detail: B.Sc. Computer Science
+            start: 2024-11
+            end: 2025-02
+          - name: Programming
+            detail: B.Sc. Bioinformatics
+            start: 2024-11
+            end: 2025-02
+          - name: Software Engineering
+            detail: B.Sc. Bioinformatics
+            start: 2024-04
+            end: 2024-06
+          - name: Software Engineering
+            detail: B.Sc. Computer Science
+            start: 2024-03
+            end: 2024-06
+          - name: Programming with laboratory
+            detail: B.Sc. Applied Mathematics
+            start: 2024-03
+            end: 2024-07
+          - name: Software Engineering
+            detail: B.Sc. Computer Science, Bioinformatics
+            start: 2023-03
+            end: 2023-06
+          - name: Programming II
+            detail: B.Sc. Computer Science
+            start: 2022-10
+            end: 2023-02
+      - name: Educator
+        detail: Digital transition for school staff, G. Verdi, Egna
+        start: 2024-10
+        end: 2025-04
+        kind: work
+      - name: High-school teacher
+        detail: IIS G. Galilei, Bolzano
+        start: 2021-09
+        end: 2022-08
+        kind: work
+
+  - id: publications
+    label: Publications
+    items:
+      - name: Continuous Reasons
+        detail: SUM 2026, Athens, 21-23 October 2026
+        start: 2026-10
+        point: true
+        kind: xai
+      - name: Margin Absorption
+        detail: ICTCS 2026, Udine, 7-9 September 2026
+        start: 2026-09
+        point: true
+        kind: xai
+      - name: PACO
+        detail: PETRI NETS 2026, Hamburg, 22-26 June 2026
+        start: 2026-06
+        point: true
+        kind: mc
+      - name: DRIFTS
+        detail: IEEE CAI 2026, Granada, 8-10 May 2026
+        start: 2026-05
+        point: true
+        kind: xai
+      - name: TSST
+        detail: DIS 2025, London, 1-5 June 2025
+        start: 2025-06
+        point: true
+        kind: xai
+
+legend:
+  - kind: edu
+    label: Education
+  - kind: work
+    label: Work
+  - kind: mc
+    label: Model checking
+    shape: diamond
+  - kind: xai
+    label: Explainable artificial intelligence
+    shape: diamond
