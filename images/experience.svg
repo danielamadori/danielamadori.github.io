@@ -50,7 +50,7 @@
   <rect x="978" y="309" width="499" height="22" rx="7" fill="#4F81BD"/>
   <text x="44" y="370" font-size="19" fill="#333333">B.S. in Computer Science </text>
   <rect x="582" y="353" width="350" height="22" rx="7" fill="#4F81BD"/>
-  <text x="44" y="414" font-size="19" fill="#333333">High-school diploma </text>
+  <text x="44" y="414" font-size="19" fill="#333333">Technical High School in Computer Science </text>
   <circle cx="577" cy="408" r="9" fill="#4F81BD"/>
   <text x="44" y="470" font-size="18" font-weight="bold" fill="#9AA5B1" letter-spacing="1.4">WORK</text>
   <text x="44" y="510" font-size="19" fill="#333333">Post-graduate research grant </text>
