@@ -12,7 +12,7 @@ axis:
   start: 2018.0        # inizio dell'asse
   break: 2021.0        # fin qui gli anni sono compressi
   end: 2027.5
-  break_share: 8       # percentuale di larghezza data al tratto compresso
+  break_share: 11      # percentuale di larghezza data al tratto compresso
   ticks: [2018, 2021, 2022, 2023, 2024, 2025, 2026, 2027]
 
 groups:
@@ -59,7 +59,7 @@ groups:
         end: 2026-09
         kind: work
       - name: University tutoring
-        detail: 256 h in total
+        detail: 256 h
         collapsible: true
         kind: work
         children:
