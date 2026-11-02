@@ -59,7 +59,6 @@ groups:
         end: 2026-09
         kind: work
       - name: University tutoring
-        detail: 256 h
         collapsible: true
         kind: work
         children:
@@ -113,27 +112,27 @@ groups:
   - id: publications
     label: Publications
     items:
-      - name: Continuous Reasons
+      - name: Continuous Reasons for Random Forests via Budgeted Ordered Binary Decision Diagrams Compilation
         detail: SUM 2026, Athens, 21-23 October 2026
         start: 2026-10
         point: true
         kind: xai
-      - name: Margin Absorption
+      - name: Compiling the Plurality Winner of a Random Forest into OBDDs via Margin Absorption
         detail: ICTCS 2026, Udine, 7-9 September 2026
         start: 2026-09
         point: true
         kind: xai
-      - name: PACO
+      - name: 'PACO: A Petri Net-Based Tool for Designing, Simulating, and Analyzing Multi-Objective Stochastic Processes'
         detail: PETRI NETS 2026, Hamburg, 22-26 June 2026
         start: 2026-06
         point: true
         kind: mc
-      - name: DRIFTS
+      - name: 'DRIFTS: Distributed Robustness for Time Series is Feasible, Distributed, and Fun'
         detail: IEEE CAI 2026, Granada, 8-10 May 2026
         start: 2026-05
         point: true
         kind: xai
-      - name: TSST
+      - name: 'Time Series Step Tree: A Novel Interpretable Method for Prompt Classification of Time Series'
         detail: DIS 2025, London, 1-5 June 2025
         start: 2025-06
         point: true
