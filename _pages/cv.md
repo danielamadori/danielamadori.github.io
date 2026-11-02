@@ -11,6 +11,10 @@ redirect_from:
 Education
 =========
 
+* Ph.D. in <a href="https://www.corsi.univr.it/?ent=cs&id=635" target="_blank">Computer Science, University of Verona</a>
+
+  * 10/2026 – present, XLII cycle, with scholarship
+  * Topic: formally certified explanations and robustness verification for machine learning classifiers
 * M.S. in <a href="https://www.corsi.univr.it/?ent=cs&id=417" target="_blank">Computer Science and Engineering, University of Verona</a>
 
   * Date: 17/07/2025
@@ -36,7 +40,7 @@ Education
 Work experience
 ===============
 
-* 10/2025 – 06/2026 **Post-graduate Research Grant** – University of Verona
+* 10/2025 – 09/2026 **Post-graduate Research Grant** – University of Verona
   * *Project:* *Impact of time-varying parameters on the dimensional distribution of molecules in chemical processes: modeling and analysis*
   * *Industrial partner:* **NEWCHEM S.p.A.** (Milan, Italy)
   * *Supervisor:* Prof. Pietro Sala
