@@ -11,11 +11,11 @@ excerpt: >-
   reasoning across an entire dataset: we compile the classification relation of a trained forest
   into Ordered Binary Decision Diagrams (OBDDs) once, encoding each feature axis into cells cut by
   the forest thresholds and tallying hard-majority votes through a symbolic accumulator, then read
-  a per-sample reason off the shared diagram by a counterexample-driven squeeze and a coordinate-
-  wise maximize. To keep compilation within memory, a node budget triggers a tableau-style case
-  split on a single cell bit, so the monolithic diagram is replaced by a tree of disjoint cubes,
-  each carrying a small final OBDD. We compare this compile-once, read-many approach with existing
-  sample-wise optimization methods in a preliminary experimental study.
+  a per-sample reason off the shared diagram by a counterexample-driven squeeze and a
+  coordinate-wise maximize. To keep compilation within memory, a node budget triggers a
+  tableau-style case split on a single cell bit, so the monolithic diagram is replaced by a tree
+  of disjoint cubes, each carrying a small final OBDD. We compare this compile-once, read-many
+  approach with existing sample-wise optimization methods in a preliminary experimental study.
 date: 2026-10-21
 venue: '17th International Conference on Scalable Uncertainty Management (SUM 2026), Athens, Greece — Springer LNAI, in press'
 citation: 'Amadori, D., Chini, E., Sala, P. (2026). &quot;Continuous Reasons for Random Forests via Budgeted Ordered Binary Decision Diagrams Compilation.&quot; <i>17th International Conference on Scalable Uncertainty Management (SUM 2026)</i>, Springer LNAI. In press.'

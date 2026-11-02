@@ -4,8 +4,8 @@ collection: publications
 permalink: /publication/2026-time-series-step-tree
 excerpt: >-
   The growing volume of time series (TS) data across diverse fields presents both opportunities
-  and challenges for efficient and practical classification that can give us interpretable and in-
-  time insight into the data. This paper introduces Time Series Step Tree (TSST), a novel and
+  and challenges for efficient and practical classification that can give us interpretable and
+  in-time insight into the data. This paper introduces Time Series Step Tree (TSST), a novel and
   inherently interpretable method for prompt TS classification. Addressing the growing need for
   both timeliness and transparency in time-sensitive applications, TSST employs a progressive,
   step-wise evaluation of TS data with dynamically adjusted observation windows. At the core of
