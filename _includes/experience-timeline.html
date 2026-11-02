@@ -48,7 +48,7 @@
 .xp__glabel{font-size:.78rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
             color:var(--thin);padding:.45em 0 .25em .9em}
 .xp__row{display:grid;grid-template-columns:var(--label) minmax(0,1fr);align-items:center;min-height:2.3em}
-.xp__name{padding:0 .8em 0 .9em;color:var(--ink);line-height:1.25}
+.xp__name{padding:.18em .8em .18em .9em;color:var(--ink);line-height:1.25}
 .xp__row--child .xp__name{padding-left:2.1em;font-size:.92em}
 .xp__row--strong .xp__name{font-weight:700;color:var(--edu-soft)}
 .xp__track{position:relative;height:1.45em}
@@ -83,12 +83,12 @@
 .xp__tip b{display:block;font-weight:600}
 .xp__tip--on{opacity:1}
 
-@media (max-width:640px){
-  .xp{--label:min(42%,13rem);font-size:.85rem}
-  .xp__legend li{white-space:normal}
-  .xp__legend{font-size:.78rem}
-  .xp__title{font-size:1.5rem}
-}
+.xp--stretta{--label:min(44%,13rem);font-size:.85rem}
+.xp--stretta .xp__legend{font-size:.78rem}
+.xp--stretta .xp__legend li{white-space:normal}
+.xp--stretta .xp__title{font-size:1.5rem}
+.xp--stretta .xp__tick{font-size:.72rem}
+.xp--stretta .xp__name{padding:.22em .5em .22em .7em}
 </style>
 
 <script>
@@ -282,5 +282,14 @@
     var k = (li.querySelector('.xp__key').className.match(/xp__key--([a-z-]+)/) || [])[1];
     if (k && k !== 'diamond' && !usati[k]) li.remove();
   });
+
+  /* la soglia e' sulla larghezza del componente: in home la colonna del testo
+     e' molto piu' stretta della finestra e la media query non bastava */
+  function misura() {
+    radice.classList.toggle('xp--stretta', radice.clientWidth < 620);
+  }
+  misura();
+  if (window.ResizeObserver) { new ResizeObserver(misura).observe(radice); }
+  else { addEventListener('resize', misura); }
 })();
 </script>
