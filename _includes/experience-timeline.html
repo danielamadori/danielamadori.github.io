@@ -3,13 +3,14 @@
 
   Uso:  {% include experience-timeline.html %}                 tutti i gruppi
         {% include experience-timeline.html skip="publications" %}   senza le pubblicazioni
+        {% include experience-timeline.html from="2025-07" %}        solo da quella data in poi
 
   L'asse e' spezzato: il tratto fra il 2018 e il 2021, dove non succede quasi
   nulla, occupa una frazione fissa della larghezza (axis.break_share) invece
   della sua durata reale. La rottura e' segnata sul disegno.
 {% endcomment %}
 
-<div class="xp" data-skip="{{ include.skip | default: '' }}" aria-label="Timeline of education, work and publications">
+<div class="xp" data-skip="{{ include.skip | default: '' }}" data-from="{{ include.from | default: '' }}" aria-label="Timeline of education, work and publications">
   <div class="xp__axis" aria-hidden="true"></div>
   <div class="xp__body"></div>
 </div>
@@ -99,26 +100,75 @@
   /* oggi, in anni: le voci aperte arrivano fin qui e poi mostrano la freccia */
   var adesso = new Date();
   var OGGI = Math.min(adesso.getFullYear() + adesso.getMonth() / 12, A.end);
+  /* ---- taglio ----
+     Con from="2025-07" la pagina mostra solo da quella data in poi: le voci che
+     finiscono prima spariscono e l'asse ricomincia li', senza tratto compresso.
+     Le pubblicazioni non si tagliano: sono il contenuto della pagina. */
+  var DA = radice.dataset.from ? anno(radice.dataset.from) : null;
+  function finisce(v) { return v.ongoing ? 1e9 : anno(v.end || v.start); }
+  function resta(v) {
+    if (v.children) return v.children.some(resta);
+    return finisce(v) > DA + 1e-6;
+  }
+  function clona(o) {
+    var c = {}, k;
+    for (k in o) { if (Object.prototype.hasOwnProperty.call(o, k)) c[k] = o[k]; }
+    return c;
+  }
+  var gruppi = dati.groups;
+  if (DA) {
+    gruppi = gruppi.map(function (g) {
+      if (g.id === 'publications') return g;
+      var g2 = clona(g);
+      g2.items = g.items.filter(resta).map(function (v) {
+        if (!v.children) return v;
+        var v2 = clona(v);
+        v2.children = v.children.filter(resta);
+        return v2;
+      });
+      return g2;
+    }).filter(function (g) { return g.items.length > 0; });
+
+    var minimo = DA;
+    gruppi.forEach(function (g) {
+      g.items.forEach(function (v) {
+        if (v.children) { v.children.forEach(function (c) { minimo = Math.min(minimo, anno(c.start)); }); }
+        else { minimo = Math.min(minimo, anno(v.start)); }
+      });
+    });
+    minimo -= 0.25;        /* un po' d'aria prima della prima voce */
+    var passi = [];
+    for (var x = Math.ceil((minimo + 0.04) * 2) / 2; x <= A.end - 0.25; x += 0.5) { passi.push(x); }
+    A = {start: minimo, break: minimo, break_share: 0, end: A.end, ticks: passi};
+  }
+  /* le tacche sono anni interi, o mezzi anni (mm/aaaa) quando c'e' il taglio */
+  function etichetta(x) {
+    if (!DA) return String(x);
+    var y = Math.floor(x + 1e-6), m = Math.round((x - y) * 12) + 1;
+    return (m < 10 ? '0' + m : m) + '/' + y;
+  }
   /* posizione in percentuale, con il tratto compresso all'inizio */
   function pos(t) {
-    if (t <= A.break) return (t - A.start) / (A.break - A.start) * A.break_share;
+    if (A.break_share > 0 && t <= A.break) return (t - A.start) / (A.break - A.start) * A.break_share;
     return A.break_share + (t - A.break) / (A.end - A.break) * (100 - A.break_share);
   }
   function per(t) { return pos(t).toFixed(3) + '%'; }
 
   /* ---- asse ---- */
   var asse = radice.querySelector('.xp__axis');
-  A.ticks.forEach(function (a, i) {
+  A.ticks.forEach(function (a) {
     var t = document.createElement('span');
-    t.className = 'xp__tick' + (i === 0 ? ' xp__tick--first' : '');
+    t.className = 'xp__tick' + (pos(a) < 1 ? ' xp__tick--first' : '');
     t.style.left = per(a);
-    t.textContent = a;
+    t.textContent = etichetta(a);
     asse.appendChild(t);
   });
-  var taglio = document.createElement('span');
-  taglio.className = 'xp__cut';
-  taglio.style.left = (A.break_share / 2).toFixed(2) + '%';
-  asse.appendChild(taglio);
+  if (A.break_share) {
+    var taglio = document.createElement('span');
+    taglio.className = 'xp__cut';
+    taglio.style.left = (A.break_share / 2).toFixed(2) + '%';
+    asse.appendChild(taglio);
+  }
 
   /* passo delle righe verticali di sfondo, uguale a un anno in scala */
   var passo = (100 - A.break_share) / (A.end - A.break);
@@ -159,7 +209,7 @@
     } else {
       el = document.createElement('span');
       el.className = 'xp__bar xp__bar--' + (v.kind || tinta) + (v.ongoing ? ' xp__bar--open' : '');
-      var a = pos(anno(v.start));
+      var a = Math.max(pos(anno(v.start)), 0);
       var b = v.ongoing ? Math.max(pos(OGGI), a + 3.2) : pos(anno(v.end));
       el.style.left = a.toFixed(3) + '%';
       el.style.width = Math.max(b - a, 0.5).toFixed(3) + '%';
@@ -200,13 +250,13 @@
   var griglia = document.createElement('div');
   griglia.className = 'xp__grid';
   A.ticks.forEach(function (a) {
-    if (a === A.start) return;
+    if (pos(a) < 1) return;
     var l = document.createElement('span');
     l.style.left = per(a);
     griglia.appendChild(l);
   });
   corpo.appendChild(griglia);
-  dati.groups.forEach(function (g) {
+  gruppi.forEach(function (g) {
     if (salta.indexOf(g.id) >= 0) return;
     var box = document.createElement('section');
     box.className = 'xp__group';
@@ -237,7 +287,7 @@
         v.children.forEach(function (c) {
           var s = document.createElement('span');
           s.className = 'xp__bar xp__bar--work-soft';
-          var a = pos(anno(c.start)), z = pos(anno(c.end));
+          var a = Math.max(pos(anno(c.start)), 0), z = pos(anno(c.end));
           s.style.left = a.toFixed(3) + '%';
           s.style.width = Math.max(z - a, 0.5).toFixed(3) + '%';
           s.addEventListener('mousemove', function (e) {
