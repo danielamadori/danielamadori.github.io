@@ -24,14 +24,9 @@ groups:
         start: 2026-10
         ongoing: true
         kind: edu-soft
-      - name: Erasmus
-        detail: ULPGC, Las Palmas de Gran Canaria
-        start: 2023-09
-        end: 2024-02
-        kind: edu-light
       - name: M.S. in Computer Science & Engineering
         detail: University of Verona, 109/110
-        start: 2022-10
+        start: 2024-02        # dalla fine dell'Erasmus
         end: 2025-07
         kind: edu
         marker:
@@ -39,6 +34,11 @@ groups:
           label: M.S. thesis
           detail: Explaining Strategies for Expected Impacts
           kind: mc
+      - name: Erasmus
+        detail: ULPGC, Las Palmas de Gran Canaria
+        start: 2023-09
+        end: 2024-02
+        kind: edu-light
       - name: B.S. in Computer Science
         detail: University of Verona, 108/110
         start: 2018-09
