@@ -86,7 +86,7 @@ $x-large: 1600px;
     &::-webkit-details-marker { display: none; }
 
     &::before {
-      content: "B8";
+      content: "▸";   // triangolo pieno a destra
       font-size: 0.9em;
       transition: transform 0.15s;
     }
