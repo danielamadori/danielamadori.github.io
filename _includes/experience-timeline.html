@@ -96,6 +96,9 @@
     var p = String(s).split('-');
     return +p[0] + ((+p[1] || 1) - 1) / 12;
   }
+  /* oggi, in anni: le voci aperte arrivano fin qui e poi mostrano la freccia */
+  var adesso = new Date();
+  var OGGI = Math.min(adesso.getFullYear() + adesso.getMonth() / 12, A.end);
   /* posizione in percentuale, con il tratto compresso all'inizio */
   function pos(t) {
     if (t <= A.break) return (t - A.start) / (A.break - A.start) * A.break_share;
@@ -157,7 +160,7 @@
       el = document.createElement('span');
       el.className = 'xp__bar xp__bar--' + (v.kind || tinta) + (v.ongoing ? ' xp__bar--open' : '');
       var a = pos(anno(v.start));
-      var b = v.ongoing ? a + 3.2 : pos(anno(v.end));
+      var b = v.ongoing ? Math.max(pos(OGGI), a + 1.6) : pos(anno(v.end));
       el.style.left = a.toFixed(3) + '%';
       el.style.width = Math.max(b - a, 0.5).toFixed(3) + '%';
     }
