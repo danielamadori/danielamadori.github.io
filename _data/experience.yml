@@ -21,7 +21,7 @@ groups:
     items:
       - name: Ph.D. in Computer Science
         detail: XLII cycle, University of Verona
-        start: 2025-07        # dalla fine della magistrale
+        start: 2026-10
         ongoing: true
         kind: edu-soft
       - name: M.S. in Computer Science & Engineering

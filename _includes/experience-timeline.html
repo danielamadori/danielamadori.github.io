@@ -160,7 +160,7 @@
       el = document.createElement('span');
       el.className = 'xp__bar xp__bar--' + (v.kind || tinta) + (v.ongoing ? ' xp__bar--open' : '');
       var a = pos(anno(v.start));
-      var b = v.ongoing ? Math.max(pos(OGGI), a + 1.6) : pos(anno(v.end));
+      var b = v.ongoing ? Math.max(pos(OGGI), a + 3.2) : pos(anno(v.end));
       el.style.left = a.toFixed(3) + '%';
       el.style.width = Math.max(b - a, 0.5).toFixed(3) + '%';
     }
