@@ -65,3 +65,42 @@ $x-large: 1600px;
     overflow-x: hidden;
   }
 }
+
+/* L'abstract delle pubblicazioni: chiuso all'apertura della pagina, si apre
+   con un clic sulla parola "Abstract". Niente JavaScript, lo fa <details>. */
+.abstract {
+  margin: 0 0 1.3em;
+
+  &__toggle {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: mix($text-color, $background-color, 55%);
+    list-style: none;
+
+    &::-webkit-details-marker { display: none; }
+
+    &::before {
+      content: "B8";
+      font-size: 0.9em;
+      transition: transform 0.15s;
+    }
+
+    &:hover { color: $link-color; }
+  }
+
+  &[open] &__toggle::before { transform: rotate(90deg); }
+
+  &__body {
+    margin-top: 0.4em;
+    font-size: 0.86em;
+    line-height: 1.6;
+
+    p { margin: 0; }
+  }
+}
