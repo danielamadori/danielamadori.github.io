@@ -80,5 +80,4 @@
   <text x="88" y="1058" font-size="18" fill="#333333">Education</text>
   <rect x="230" y="1044" width="34" height="16" rx="5" fill="#9AA5B1"/>
   <text x="274" y="1058" font-size="18" fill="#333333">Work</text>
-  <text x="1700" y="1058" font-size="17" fill="#9AA5B1" text-anchor="end">2018–2021 compressed</text>
 </svg>
