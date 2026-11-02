@@ -1,78 +1,166 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1380" viewBox="0 0 720 1380" font-family="Open Sans, Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Timeline of Daniel Amadori's studies, research grant, Ph.D. and publications">
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1080" viewBox="0 0 1900 1080" font-family="Open Sans, Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="Timeline of Daniel Amadori's studies, research grant and Ph.D., with publications grouped in two research lines">
   <title>Experience</title>
-  <desc>B.Sc. 2018-2022, M.Sc. 2022-2025, post-graduate research grant 10/2025-09/2026, Ph.D. from 10/2026; five publications: TSST (DIS 2025), DRIFTS (IEEE CAI 2026), PACO (PETRI NETS 2026), Margin Absorption (ICTCS 2026), Continuous Reasons (SUM 2026, in press).</desc>
-  <rect width="720" height="1380" fill="#FFFFFF"/>
+  <desc>Two research lines. Processes (BPMN+CPI): M.Sc. thesis "Explaining Strategies for Expected Impacts" and PACO (PETRI NETS 2026). Certified explanations (Darwiche reasons): TSST (DIS 2025), DRIFTS (IEEE CAI 2026), Margin Absorption (ICTCS 2026), Continuous Reasons (SUM 2026, in press). Stages: B.Sc. 2018-2022, M.Sc. 2022-2025, research grant 10/2025-09/2026, Ph.D. from 10/2026, where the two lines meet.</desc>
+  <defs>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3C8C4E"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C0504D"/>
+    </marker>
+  </defs>
+  <rect width="1900" height="1080" fill="#FFFFFF"/>
 
   <!-- Titolo -->
-  <text x="24" y="50" font-size="34" font-weight="bold" fill="#111111">Experience</text>
-  <rect x="26" y="64" width="112" height="5" rx="2.5" fill="#4F81BD"/>
+  <text x="60" y="88" font-size="52" font-weight="bold" fill="#000000">Experience</text>
+  <rect x="62" y="105" width="150" height="6" rx="3" fill="#4F81BD"/>
 
-  <!-- Binario verticale -->
-  <line x1="42" y1="104" x2="42" y2="1116" stroke="#4F81BD" stroke-width="4" stroke-linecap="round"/>
+  <!-- ============================================================ -->
+  <!-- TIMELINE: B.S. -> M.S. -> Research Grant -> Ph.D.            -->
+  <!-- ============================================================ -->
+  <path d="M 80,185 H 1800" fill="none" stroke="#4F81BD" stroke-width="5" stroke-linecap="round"/>
+  <polygon points="1800,158 1856,185 1800,212" fill="#4F81BD"/>
 
-  <!-- ================= 1. Laurea triennale ================= -->
-  <circle cx="42" cy="134" r="10" fill="#9AA5B1" stroke="#FFFFFF" stroke-width="3"/>
-  <rect x="72" y="104" width="624" height="146" rx="16" fill="#F7F7F5" stroke="#9AA5B1" stroke-width="2"/>
-  <text x="96" y="142" font-size="25" font-weight="bold" fill="#5A6470">B.S. in Computer Science</text>
-  <text x="96" y="172" font-size="19" fill="#4F81BD" font-weight="bold">2018 &#8211; 2022 &#183; 108/110 &#183; University of Verona</text>
-  <text x="96" y="208" font-size="20" fill="#333333">High-school teaching &#8212; Computer Science teacher at</text>
-  <text x="96" y="234" font-size="20" fill="#333333">IIS G. Galilei, Bolzano <tspan fill="#666666">(2021 &#8211; 2022)</tspan></text>
+  <circle cx="195" cy="185" r="18" fill="#9AA5B1" stroke="#FFFFFF" stroke-width="4"/>
+  <text x="195" y="146" font-size="25" font-weight="bold" fill="#1F497D" text-anchor="middle">B.S. Computer Science</text>
+  <text x="195" y="234" font-size="20" fill="#333333" text-anchor="middle">2018 &#8211; 2022 &#183; <tspan font-weight="bold" fill="#4F81BD">108/110</tspan></text>
 
-  <!-- ================= 2. Laurea magistrale ================= -->
-  <circle cx="42" cy="304" r="11" fill="#4F81BD" stroke="#FFFFFF" stroke-width="3"/>
-  <rect x="72" y="274" width="624" height="312" rx="16" fill="#F2F5FA" stroke="#4F81BD" stroke-width="2"/>
-  <text x="96" y="312" font-size="25" font-weight="bold" fill="#1F497D">M.S. in Computer Science &amp; Engineering</text>
-  <text x="96" y="342" font-size="19" fill="#4F81BD" font-weight="bold">2022 &#8211; 2025 &#183; 109/110 &#183; University of Verona</text>
-  <text x="96" y="378" font-size="20" fill="#333333">Thesis &#8220;Explaining Strategies for Expected Impacts&#8221;</text>
-  <text x="96" y="402" font-size="17" fill="#666666">Supervisor Prof. P. Sala &#183; Co-supervisor E. Chini</text>
-  <text x="96" y="434" font-size="20" fill="#333333">Erasmus &#8212; Las Palmas de Gran Canaria <tspan fill="#666666">(09/2023 &#8211; 02/2024)</tspan></text>
-  <text x="96" y="460" font-size="20" fill="#333333">Tutoring &#8212; <tspan font-weight="bold" fill="#4F81BD">256 h</tspan> on B.Sc. courses in Verona</text>
+  <circle cx="675" cy="185" r="21" fill="#4F81BD" stroke="#FFFFFF" stroke-width="4"/>
+  <text x="675" y="146" font-size="26" font-weight="bold" fill="#1F497D" text-anchor="middle">M.S. Computer Science &amp; Engineering</text>
+  <text x="675" y="234" font-size="20" font-weight="bold" fill="#4F81BD" text-anchor="middle">2022 &#8211; 2025 &#183; 109/110</text>
 
-  <rect x="96" y="480" width="576" height="88" rx="10" fill="#FFFFFF" stroke="#C0504D" stroke-width="2"/>
-  <text x="118" y="508" font-size="21" font-weight="bold" fill="#C0504D">TSST</text>
-  <text x="118" y="532" font-size="17" fill="#666666">DIS 2025 &#183; 3rd author</text>
-  <text x="118" y="556" font-size="17" fill="#333333">Prompt time-series classification</text>
+  <circle cx="1250" cy="185" r="19" fill="#4F81BD" stroke="#FFFFFF" stroke-width="4"/>
+  <text x="1250" y="146" font-size="25" font-weight="bold" fill="#1F497D" text-anchor="middle">Research Grant</text>
+  <text x="1250" y="234" font-size="20" font-weight="bold" fill="#4F81BD" text-anchor="middle">10/2025 &#8211; 09/2026</text>
 
-  <!-- ================= 3. Borsa di ricerca ================= -->
-  <circle cx="42" cy="640" r="11" fill="#4F81BD" stroke="#FFFFFF" stroke-width="3"/>
-  <rect x="72" y="610" width="624" height="452" rx="16" fill="#EAF0FA" stroke="#4F81BD" stroke-width="2"/>
-  <text x="96" y="648" font-size="25" font-weight="bold" fill="#1F497D">Post-graduate Research Grant</text>
-  <text x="96" y="678" font-size="19" fill="#4F81BD" font-weight="bold">10/2025 &#8211; 09/2026 &#183; NEWCHEM &#183; MIMIT &#183; Prof. Sala</text>
-  <text x="96" y="712" font-size="20" fill="#333333">Interpretable machine learning on the temporal data of a real</text>
-  <text x="96" y="736" font-size="20" fill="#333333">chemical process <tspan fill="#666666">(spray drying)</tspan></text>
+  <circle cx="1670" cy="185" r="23" fill="#1F497D" stroke="#FFFFFF" stroke-width="4"/>
+  <text x="1670" y="146" font-size="26" font-weight="bold" fill="#1F497D" text-anchor="middle">Ph.D. Computer Science</text>
+  <text x="1670" y="234" font-size="20" font-weight="bold" fill="#1F497D" text-anchor="middle">from 10/2026 &#183; XLII cycle</text>
 
-  <rect x="96" y="756" width="576" height="88" rx="10" fill="#FBEDEC" stroke="#C0504D" stroke-width="3"/>
-  <text x="118" y="784" font-size="21" font-weight="bold" fill="#C0504D">DRIFTS</text>
-  <text x="118" y="808" font-size="17" font-weight="bold" fill="#C0504D">IEEE CAI 2026 &#183; 1st author</text>
-  <text x="118" y="832" font-size="17" fill="#333333">Distributed robustness for time series</text>
+  <line x1="195"  y1="249" x2="195"  y2="279" stroke="#9AA5B1" stroke-width="3" stroke-dasharray="6,5"/>
+  <line x1="675"  y1="249" x2="675"  y2="279" stroke="#4F81BD" stroke-width="3" stroke-dasharray="6,5"/>
+  <line x1="1250" y1="249" x2="1250" y2="279" stroke="#4F81BD" stroke-width="3" stroke-dasharray="6,5"/>
+  <line x1="1670" y1="249" x2="1670" y2="279" stroke="#1F497D" stroke-width="3" stroke-dasharray="6,5"/>
 
-  <rect x="96" y="856" width="576" height="88" rx="10" fill="#FFFFFF" stroke="#C0504D" stroke-width="2"/>
-  <text x="118" y="884" font-size="21" font-weight="bold" fill="#C0504D">PACO</text>
-  <text x="118" y="908" font-size="17" fill="#666666">PETRI NETS 2026 &#183; 2nd author</text>
-  <text x="118" y="932" font-size="17" fill="#333333">Tool built on the M.S. thesis</text>
+  <!-- ============================================================ -->
+  <!-- ZONA 1: TRIENNALE                                            -->
+  <!-- ============================================================ -->
+  <rect x="60" y="284" width="270" height="500" rx="22" fill="#F7F7F5" stroke="#9AA5B1" stroke-width="2.5"/>
+  <text x="86" y="331" font-size="24" font-weight="bold" fill="#5A6470">During the Bachelor</text>
+  <rect x="88" y="345" width="110" height="4" rx="2" fill="#9AA5B1"/>
+  <text x="86" y="404" font-size="22" font-weight="bold" fill="#1F497D">High-school teaching</text>
+  <text x="86" y="440" font-size="19" fill="#333333">Computer Science teacher</text>
+  <text x="86" y="466" font-size="19" fill="#333333">IIS G. Galilei (Bolzano)</text>
+  <text x="86" y="496" font-size="18" fill="#666666">2021 &#8211; 2022</text>
 
-  <rect x="96" y="956" width="576" height="88" rx="10" fill="#FBEDEC" stroke="#C0504D" stroke-width="3"/>
-  <text x="118" y="984" font-size="21" font-weight="bold" fill="#C0504D">Margin Absorption</text>
-  <text x="118" y="1008" font-size="17" font-weight="bold" fill="#C0504D">ICTCS 2026 &#183; 1st author</text>
-  <text x="118" y="1032" font-size="17" fill="#333333">Plurality winner of a random forest, compiled into OBDDs</text>
+  <!-- ============================================================ -->
+  <!-- ZONA 2: MAGISTRALE                                           -->
+  <!-- ============================================================ -->
+  <rect x="350" y="284" width="650" height="500" rx="22" fill="#F2F5FA" stroke="#4F81BD" stroke-width="2.5"/>
+  <text x="378" y="331" font-size="24" font-weight="bold" fill="#1F497D">During the M.S. (2022&#8211;2025)</text>
+  <rect x="380" y="345" width="110" height="4" rx="2" fill="#4F81BD"/>
 
-  <!-- ================= 4. Dottorato ================= -->
-  <circle cx="42" cy="1116" r="13" fill="#1F497D" stroke="#FFFFFF" stroke-width="3"/>
-  <rect x="72" y="1086" width="624" height="228" rx="16" fill="#E3ECF8" stroke="#1F497D" stroke-width="2.5"/>
-  <text x="96" y="1124" font-size="25" font-weight="bold" fill="#1F497D">Ph.D. in Computer Science</text>
-  <text x="96" y="1154" font-size="19" fill="#4F81BD" font-weight="bold">from 10/2026 &#183; XLII cycle &#183; University of Verona</text>
-  <text x="96" y="1188" font-size="20" fill="#333333">Formally certified explanations for machine learning classifiers</text>
+  <!-- TSST: filone spiegazioni certificate -->
+  <rect x="378" y="390" width="290" height="140" rx="14" fill="#FFFFFF" stroke="#7B4EA3" stroke-width="2"/>
+  <text x="402" y="430" font-size="25" font-weight="bold" fill="#7B4EA3">TSST</text>
+  <text x="402" y="460" font-size="18" fill="#666666">DIS 2025 &#183; 3rd author</text>
+  <text x="402" y="494" font-size="18" fill="#333333">Prompt time-series classification</text>
 
-  <rect x="96" y="1208" width="576" height="88" rx="10" fill="#FBEDEC" stroke="#C0504D" stroke-width="3"/>
-  <text x="118" y="1236" font-size="21" font-weight="bold" fill="#C0504D">Continuous Reasons</text>
-  <text x="118" y="1260" font-size="17" font-weight="bold" fill="#C0504D">SUM 2026 &#183; 1st author &#183; in press</text>
-  <text x="118" y="1284" font-size="17" fill="#333333">Compile once, read many: reasons from a shared OBDD</text>
+  <!-- Tesi: origine del filone processi -->
+  <rect x="688" y="390" width="288" height="140" rx="14" fill="#FDF3F2" stroke="#C0504D" stroke-width="2" stroke-dasharray="7,5"/>
+  <text x="712" y="430" font-size="24" font-weight="bold" fill="#C0504D">Thesis</text>
+  <text x="712" y="460" font-size="17" fill="#333333">&#8220;Explaining Strategies for</text>
+  <text x="712" y="482" font-size="17" fill="#333333">Expected Impacts&#8221;</text>
+  <text x="712" y="510" font-size="17" fill="#666666">Sup. Prof. P. Sala &#183; Co-sup. E. Chini</text>
 
-  <!-- ================= Legenda ================= -->
-  <circle cx="34" cy="1348" r="9" fill="#4F81BD"/>
-  <text x="52" y="1355" font-size="17" fill="#333333">Studies / grant</text>
-  <rect x="200" y="1338" width="20" height="20" rx="5" fill="#FFFFFF" stroke="#C0504D" stroke-width="2"/>
-  <text x="230" y="1355" font-size="17" fill="#333333">Publication</text>
-  <rect x="360" y="1338" width="20" height="20" rx="5" fill="#FBEDEC" stroke="#C0504D" stroke-width="3"/>
-  <text x="390" y="1355" font-size="17" fill="#333333">First author</text>
+  <text x="378" y="590" font-size="21" font-weight="bold" fill="#1F497D">Erasmus</text>
+  <text x="378" y="620" font-size="19" fill="#333333">Las Palmas de Gran Canaria (09/2023&#8211;02/2024)</text>
+  <text x="378" y="645" font-size="17" fill="#666666">Data Science Engineering &#183; Computational Intelligence</text>
+
+  <text x="378" y="700" font-size="21" font-weight="bold" fill="#1F497D">Tutoring</text>
+  <text x="378" y="730" font-size="19" fill="#333333">University tutor <tspan font-weight="bold" fill="#4F81BD">256 h</tspan></text>
+  <text x="378" y="755" font-size="17" fill="#666666">Programming &#183; Programming II &#183; Software Engineering</text>
+
+  <!-- ============================================================ -->
+  <!-- ZONA 3: BORSA                                                -->
+  <!-- ============================================================ -->
+  <rect x="1020" y="284" width="460" height="500" rx="22" fill="#EAF0FA" stroke="#4F81BD" stroke-width="2.5"/>
+  <text x="1048" y="331" font-size="24" font-weight="bold" fill="#1F497D">During the Research Grant</text>
+  <rect x="1050" y="345" width="110" height="4" rx="2" fill="#4F81BD"/>
+  <text x="1048" y="375" font-size="18" fill="#666666">NEWCHEM &#183; MIMIT &#183; Prof. Sala</text>
+
+  <rect x="1048" y="395" width="404" height="140" rx="14" fill="#F3EDF9" stroke="#7B4EA3" stroke-width="3"/>
+  <text x="1072" y="435" font-size="25" font-weight="bold" fill="#7B4EA3">DRIFTS</text>
+  <text x="1072" y="465" font-size="18" font-weight="bold" fill="#7B4EA3">IEEE CAI 2026 &#183; 1st author</text>
+  <text x="1072" y="499" font-size="18" fill="#333333">Distributed robustness for time series</text>
+
+  <rect x="1048" y="555" width="404" height="140" rx="14" fill="#F3EDF9" stroke="#7B4EA3" stroke-width="3"/>
+  <text x="1072" y="595" font-size="25" font-weight="bold" fill="#7B4EA3">Margin Absorption</text>
+  <text x="1072" y="625" font-size="18" font-weight="bold" fill="#7B4EA3">ICTCS 2026 &#183; 1st author</text>
+  <text x="1072" y="659" font-size="18" fill="#333333">Plurality winner compiled into OBDDs</text>
+
+  <text x="1048" y="738" font-size="18" fill="#333333">Applying my methods to the time series of a</text>
+  <text x="1048" y="762" font-size="18" fill="#666666">real chemical process (spray drying).</text>
+
+  <!-- ============================================================ -->
+  <!-- ZONA 4: DOTTORATO - i due filoni si incontrano               -->
+  <!-- ============================================================ -->
+  <rect x="1500" y="284" width="340" height="500" rx="22" fill="#E3ECF8" stroke="#1F497D" stroke-width="3"/>
+  <text x="1528" y="331" font-size="24" font-weight="bold" fill="#1F497D">During the Ph.D.</text>
+  <rect x="1530" y="345" width="110" height="4" rx="2" fill="#1F497D"/>
+  <text x="1528" y="375" font-size="18" fill="#666666">University of Verona &#183; XLII cycle</text>
+
+  <rect x="1528" y="395" width="284" height="150" rx="14" fill="#F3EDF9" stroke="#7B4EA3" stroke-width="3"/>
+  <text x="1552" y="433" font-size="23" font-weight="bold" fill="#7B4EA3">Continuous Reasons</text>
+  <text x="1552" y="462" font-size="18" font-weight="bold" fill="#7B4EA3">SUM 2026 &#183; 1st author</text>
+  <text x="1552" y="486" font-size="17" font-weight="bold" fill="#7B4EA3">in press</text>
+  <text x="1552" y="520" font-size="17" fill="#333333">Compile once, read many</text>
+
+  <!-- i due filoni si uniscono qui -->
+  <rect x="1528" y="572" width="284" height="186" rx="12" fill="#FFFFFF" stroke="#1F497D" stroke-width="2" stroke-dasharray="7,5"/>
+  <rect x="1548" y="592" width="18" height="18" rx="4" fill="#FDF3F2" stroke="#C0504D" stroke-width="2.5"/>
+  <rect x="1576" y="592" width="18" height="18" rx="4" fill="#F3EDF9" stroke="#7B4EA3" stroke-width="2.5"/>
+  <text x="1606" y="607" font-size="19" font-weight="bold" fill="#1F497D">The two lines meet</text>
+  <text x="1548" y="648" font-size="17" fill="#333333">Explaining a decision taken</text>
+  <text x="1548" y="672" font-size="17" fill="#333333">inside a running process</text>
+  <text x="1548" y="696" font-size="17" fill="#333333">instance: discrete events and</text>
+  <text x="1548" y="720" font-size="17" fill="#333333">continuous time series,</text>
+  <text x="1548" y="744" font-size="17" fill="#666666">certified together.</text>
+
+  <!-- ============================================================ -->
+  <!-- FASCIA: PACO a cavallo fra magistrale e borsa                -->
+  <!-- ============================================================ -->
+  <line x1="675" y1="828" x2="1250" y2="828" stroke="#C0504D" stroke-width="3" stroke-dasharray="10,7"/>
+  <line x1="675"  y1="813" x2="675"  y2="843" stroke="#C0504D" stroke-width="3"/>
+  <line x1="1250" y1="813" x2="1250" y2="843" stroke="#C0504D" stroke-width="3"/>
+
+  <path d="M 950,532 C 1010,640 1000,740 945,846" fill="none" stroke="#3C8C4E" stroke-width="3.5" marker-end="url(#arrowGreen)"/>
+  <rect x="905" y="789" width="150" height="40" rx="8" fill="#EAF6EC" stroke="#3C8C4E" stroke-width="1.5"/>
+  <text x="980" y="816" font-size="20" font-weight="bold" fill="#3C8C4E" text-anchor="middle">published</text>
+
+  <line x1="935" y1="828" x2="935" y2="850" stroke="#C0504D" stroke-width="2.5"/>
+  <rect x="755" y="850" width="360" height="130" rx="14" fill="#FFFFFF" stroke="#C0504D" stroke-width="2.5"/>
+  <text x="779" y="891" font-size="25" font-weight="bold" fill="#C0504D">PACO</text>
+  <text x="779" y="921" font-size="18" fill="#666666">PETRI NETS 2026 &#183; 2nd author</text>
+  <text x="779" y="955" font-size="18" fill="#333333">Tool built on the thesis</text>
+
+  <!-- il filone dei processi entra nel dottorato -->
+  <path d="M 1115,915 C 1330,960 1520,930 1640,800" fill="none" stroke="#C0504D" stroke-width="3" stroke-dasharray="9,6" marker-end="url(#arrowRed)"/>
+
+  <!-- ============================================================ -->
+  <!-- LEGENDA: i due filoni                                        -->
+  <!-- ============================================================ -->
+  <circle cx="90" cy="1020" r="11" fill="#4F81BD"/>
+  <text x="112" y="1028" font-size="19" fill="#333333">Studies / grant</text>
+
+  <rect x="300" y="1009" width="22" height="22" rx="5" fill="#FDF3F2" stroke="#C0504D" stroke-width="2.5"/>
+  <text x="334" y="1028" font-size="19" fill="#333333">Processes <tspan fill="#666666">(BPMN+CPI)</tspan></text>
+
+  <rect x="580" y="1009" width="22" height="22" rx="5" fill="#F3EDF9" stroke="#7B4EA3" stroke-width="2.5"/>
+  <text x="614" y="1028" font-size="19" fill="#333333">Certified explanations <tspan fill="#666666">(Darwiche reasons)</tspan></text>
+
+  <rect x="1060" y="1009" width="22" height="22" rx="5" fill="#FFFFFF" stroke="#7B4EA3" stroke-width="5"/>
+  <text x="1094" y="1028" font-size="19" fill="#333333">Thick border = first author</text>
+
+  <text x="1420" y="1028" font-size="18" fill="#666666">Dashed = not a paper (thesis, Ph.D. programme)</text>
 </svg>
