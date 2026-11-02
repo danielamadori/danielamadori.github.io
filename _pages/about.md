@@ -14,7 +14,7 @@ During my final year of the B.Sc. program, I also worked as a teacher at the sam
 
 I subsequently obtained my Master’s degree (M.Sc.) in Computer Science and Engineering from University of Verona, with a final grade of 109/110.
 
-My master’s thesis is titled *Explaining Strategies for Expected Impacts* and the associated tool is available here <a href="https://danielamadori.github.io/PACO/" target="_blank">PACO</a>.
+My master’s thesis is titled *Explaining Strategies for Expected Impacts*. The work was also published, as <a href="https://link.springer.com/chapter/10.1007/978-3-032-27879-1_16" target="_blank">PACO: A Petri Net-Based Tool for Designing, Simulating, and Analyzing Multi-Objective Stochastic Processes</a> at PETRI NETS 2026, and the associated tool is available here <a href="https://danielamadori.github.io/PACO/" target="_blank">PACO</a>.
 
 During my studies, I have gained experience as a tutor, teaching various subjects to undergraduate students in the B.Sc. in Computer Science, Bioinformatics and Applied Mathematics program at the same university.
 
@@ -22,6 +22,6 @@ Additionally, I participated in an Erasmus exchange program for one semester, at
 
 Between October 2025 and September 2026, I was a post-graduate research grantee in the Department of Computer Science at the University of Verona, working with Prof. Pietro Sala on interpretable machine learning models for the temporal data of chemical processes, used to understand and predict how time-varying operating parameters shape the molecular morphology of the final product. The grant was part of a project run with NEWCHEM S.p.A. and funded by the Italian Ministry of Enterprises and Made in Italy.
 
-Currently, I am a Ph.D. student in Computer Science at the University of Verona, in the XLII cycle.
+Currently, I am a Ph.D. student in Computer Science at the University of Verona, in the XLII cycle, under the supervision of Prof. Pietro Sala, who has been an excellent mentor ever since my master’s thesis.
 
 {% include experience-timeline.html %}
