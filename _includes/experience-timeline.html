@@ -20,13 +20,12 @@
   </div>
   <div class="xp__axis" aria-hidden="true"></div>
   <div class="xp__body"></div>
-  <p class="xp__hint">Hover a bar for details. Click <strong>University tutoring</strong> to expand it.</p>
 </div>
 
 <style>
 .xp{--edu:#4F81BD;--edu-soft:#1F497D;--edu-light:#A8C4E5;--work:#9AA5B1;--work-soft:#B6BFC9;
     --mc:#C0504D;--xai:#7B4EA3;--rule:#E3E8EF;--band:#FAFBFC;--ink:#333;--mute:#666;--thin:#9AA5B1;
-    --label:clamp(9.5rem,34%,21rem);font-size:.95rem;margin:1.5em 0 2em;position:relative;max-width:100%}
+    --label:clamp(9.5rem,38%,21rem);font-size:.95rem;margin:1.5em 0 2em;position:relative;max-width:100%}
 .xp__head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.5em 1.5em}
 .xp__title{margin:0 0 .15em;font-size:1.9rem;line-height:1.1;border-bottom:4px solid var(--edu);
            display:inline-block;padding-bottom:.1em}
@@ -44,7 +43,6 @@
 .xp__tick--first::after{left:0}
 .xp__tick::after{content:"";position:absolute;left:50%;bottom:-.45em;width:1px;height:.35em;background:#C7D0DA}
 .xp__cut{position:absolute;top:0;bottom:-.3em;width:0;border-left:1px dashed #C7D0DA}
-.xp__cut span{position:absolute;bottom:-.1em;left:-7px;color:#C7D0DA;font-size:.8rem;background:#fff;padding:0 1px}
 
 .xp__group{margin-top:.5em;background:var(--band);border-radius:12px;padding:.3em 0 .5em}
 .xp__glabel{font-size:.78rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
@@ -77,21 +75,19 @@
 .xp[data-open~="tutoring"] .xp__caret{transform:rotate(90deg)}
 .xp__kids{display:none}
 .xp[data-open~="tutoring"] .xp__kids{display:block}
-.xp__count{font-weight:400;color:var(--thin);font-size:.85em}
+.xp__count{font-weight:400;color:var(--thin);font-size:.85em;white-space:nowrap}
 
 .xp__tip{position:absolute;left:0;top:0;z-index:5;background:#1F497D;color:#fff;font-size:.82rem;line-height:1.35;
          padding:.45em .7em;border-radius:6px;pointer-events:none;opacity:0;transition:opacity .12s;
          max-width:22em;box-shadow:0 2px 10px rgba(0,0,0,.18)}
 .xp__tip b{display:block;font-weight:600}
 .xp__tip--on{opacity:1}
-.xp__hint{font-size:.8rem;color:var(--thin);margin:.6em 0 0}
 
 @media (max-width:640px){
   .xp{--label:min(42%,13rem);font-size:.85rem}
   .xp__legend li{white-space:normal}
   .xp__legend{font-size:.78rem}
   .xp__title{font-size:1.5rem}
-  .xp__hint{display:none}
 }
 </style>
 
@@ -130,7 +126,6 @@
   var taglio = document.createElement('span');
   taglio.className = 'xp__cut';
   taglio.style.left = (A.break_share / 2).toFixed(2) + '%';
-  taglio.innerHTML = '<span>⫻</span>';
   asse.appendChild(taglio);
 
   /* passo delle righe verticali di sfondo, uguale a un anno in scala */
