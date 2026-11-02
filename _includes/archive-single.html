@@ -27,7 +27,17 @@
     {% endif %}
 
     <h2 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
+      {% comment %}
+        Le pubblicazioni non hanno una pagina propria (collections.publications.output = false):
+        il titolo porta al paper dell'editore, e resta testo semplice finche' il paper non e' uscito.
+      {% endcomment %}
+      {% if post.collection == 'publications' %}
+        {% if post.paperurl %}
+          <a href="{{ post.paperurl }}">{{ title }}</a>
+        {% else %}
+          {{ title }}
+        {% endif %}
+      {% elsif post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>

@@ -180,7 +180,9 @@ collections:
     output: true
     permalink: /:collection/:path/
   publications:
-    output: true
+    # Nessuna pagina per la singola pubblicazione: la lista in /publications/ e'
+    # l'unica, e il titolo porta direttamente al paper dell'editore.
+    output: false
     permalink: /:collection/:path/
   portfolio:
     output: true
