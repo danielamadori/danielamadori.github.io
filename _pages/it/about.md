@@ -19,7 +19,7 @@ Durante gli studi ho lavorato come tutor, seguendo diversi insegnamenti per gli 
 
 Ho inoltre trascorso un semestre in Erasmus alla ULPGC, dove ho seguito i corsi di Intelligent Systems and Numerical Applications in Engineering.
 
-Fra ottobre 2025 e settembre 2026 sono stato titolare di un assegno di ricerca al Dipartimento di Informatica dell'Università di Verona, dove ho lavorato con il Prof. Pietro Sala su modelli di apprendimento automatico interpretabili per i dati temporali dei processi chimici, usati per capire e prevedere come i parametri di lavorazione variabili nel tempo determinino la morfologia molecolare del prodotto finale. L'assegno faceva parte di un progetto svolto con NEWCHEM S.p.A. e finanziato dal Ministero delle Imprese e del Made in Italy.
+Fra ottobre 2025 e settembre 2026 sono stato titolare di una borsa di ricerca post lauream al Dipartimento di Informatica dell'Università di Verona, dove ho lavorato con il Prof. Pietro Sala su modelli di apprendimento automatico interpretabili per i dati temporali dei processi chimici, usati per capire e prevedere come i parametri di lavorazione variabili nel tempo determinino la morfologia molecolare del prodotto finale. La borsa faceva parte di un progetto svolto con NEWCHEM S.p.A. e finanziato dal Ministero delle Imprese e del Made in Italy.
 
 Oggi sono dottorando in Informatica all'Università di Verona, XLII ciclo, sotto la supervisione del Prof. Pietro Sala, che è stato un ottimo mentore fin dalla tesi magistrale.
 

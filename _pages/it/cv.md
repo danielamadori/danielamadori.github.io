@@ -42,8 +42,8 @@ Formazione
 Esperienza lavorativa
 =====================
 
-* 10/2025 – 09/2026 **Assegno di ricerca** – Università di Verona
-  * *Progetto:* *Impatto dei parametri variabili nel tempo sulla distribuzione dimensionale delle molecole nei processi chimici: modellazione e analisi*
+* 10/2025 – 09/2026 **Borsa di ricerca post lauream** – Università di Verona
+  * *Progetto:* *Impatto dei parametri tempo-varianti sulla distribuzione dimensionale delle molecole in processi chimici: modellazione ed analisi*
   * *Partner industriale:* **NEWCHEM S.p.A.** (Milano)
   * *Responsabile:* Prof. Pietro Sala
   * *Finanziamento:* Ministero delle Imprese e del Made in Italy <a href="https://docs.univr.it/documenti/Concorso/bando/bando412128.pdf" target="_blank">(progetto CB2024MIMIT_NEWCHEM)</a>
@@ -56,8 +56,9 @@ Esperienza lavorativa
   * Laurea triennale in Informatica - Università di Verona
 * 11/2024 - 02/2025: Tutor di <a href="https://www.corsi.univr.it/?ent=cs&id=419&menu=studiare&tab=insegnamenti&codiceCs=S23&codins=10030&crediti=12.0&aa=2024/2025" target="_blank">Programmazione</a>
   * Laurea triennale in Bioinformatica - Università di Verona
-* 10/2024 - 04/2025: Educatore - Didattica digitale integrata e formazione alla transizione digitale per il personale scolastico
+* 10/2024 - 04/2025: Formatore del personale scolastico - Didattica digitale integrata e formazione alla transizione digitale
   * G. Verdi (Egna, Alto Adige)
+  * *Finanziamento:* Ministero dell'Istruzione e del Merito (MIM)
 * 04/2024 - 06/2024: Tutor di <a href="https://www.corsi.univr.it/?ent=cs&id=419&menu=studiare&tab=insegnamenti&codiceCs=S23&codins=4S008227&crediti=12.0&aa=2023/2024" target="_blank">Ingegneria del software</a>
   * Laurea triennale in Bioinformatica - Università di Verona
 * 03/2024 - 06/2024: Tutor di <a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=176679&aa=2023/2024&discr=null&discrCd=null" target="_blank">Ingegneria del software</a>

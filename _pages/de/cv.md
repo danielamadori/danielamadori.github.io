@@ -56,8 +56,9 @@ Berufserfahrung
   * Bachelor Informatik - Universität Verona
 * 11/2024 - 02/2025: Tutor für <a href="https://www.corsi.univr.it/?ent=cs&id=419&menu=studiare&tab=insegnamenti&codiceCs=S23&codins=10030&crediti=12.0&aa=2024/2025" target="_blank">Programmierung</a>
   * Bachelor Bioinformatik - Universität Verona
-* 10/2024 - 04/2025: Erzieher - Integrierte digitale Didaktik und Weiterbildung zum digitalen Wandel für Schulpersonal
+* 10/2024 - 04/2025: Referent für Schulpersonal - Integrierte digitale Didaktik und Fortbildung zum digitalen Wandel
   * G. Verdi (Neumarkt, Südtirol)
+  * *Förderung:* italienisches Bildungsministerium (MIM)
 * 04/2024 - 06/2024: Tutor für <a href="https://www.corsi.univr.it/?ent=cs&id=419&menu=studiare&tab=insegnamenti&codiceCs=S23&codins=4S008227&crediti=12.0&aa=2023/2024" target="_blank">Software Engineering</a>
   * Bachelor Bioinformatik - Universität Verona
 * 03/2024 - 06/2024: Tutor für <a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=176679&aa=2023/2024&discr=null&discrCd=null" target="_blank">Software Engineering</a>

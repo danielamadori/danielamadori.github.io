@@ -37,7 +37,9 @@ groups:
           - 'Thesis: Explaining Strategies for Expected Impacts'
           - 'Supervisor: <a href="https://profs.scienze.univr.it/~sala/" target="_blank">Prof. Pietro Sala</a>'
           - 'Assistant supervisor: <a href="https://www.linkedin.com/in/emanuele-chini-53419a238/" target="_blank">Emanuele Chini</a>'
-        start: 2024-02        # dalla fine dell'Erasmus
+        # a.a. 2022/2023: i primi esami del certificato di carriera sono del
+        # 22/02/2023, sessione invernale di quell'anno. L'Erasmus sta dentro.
+        start: 2022-10
         end: 2025-07
         kind: edu
         marker:
@@ -168,12 +170,13 @@ groups:
               - '<a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=163942&aa=2022/2023&discr=null&discrCd=null" target="_blank">Course page</a>'
             start: 2022-10
             end: 2023-02
-      - name: Educator
-        detail: Digital transition for school staff, G. Verdi, Egna
+      - name: Trainer for school staff
+        detail: Digital transition, G. Verdi, Egna
         where: 'G. Verdi, Egna (South Tyrol)'
         notes:
           - '10/2024 – 04/2025'
-          - 'Integrated digital teaching and digital transition education for school staff'
+          - 'Integrated digital teaching and training on the digital transition for school staff'
+          - 'Funding: Ministry of Education and Merit (MIM)'
         start: 2024-10
         end: 2025-04
         kind: work
