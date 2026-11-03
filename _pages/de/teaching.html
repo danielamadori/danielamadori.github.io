@@ -1,15 +1,15 @@
 ---
+permalink: /de/teaching/
+lang: de
+pid: teaching
+title: "Lehre"
 layout: archive
-title: "Portfolio"
-permalink: /portfolio/
 author_profile: true
 sitemap: false
 ---
 
 {% include base_path %}
 
-
-{% for post in site.portfolio %}
+{% for post in site.teaching reversed %}
   {% include archive-single.html %}
 {% endfor %}
-

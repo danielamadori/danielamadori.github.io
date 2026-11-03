@@ -1,4 +1,7 @@
 {% include base_path %}
+{% comment %}Le stringhe del tema seguono la lingua della pagina; le pagine
+senza lingua (quelle di servizio) ricadono sul locale del sito.{% endcomment %}
+{% assign ui = site.data.ui-text[page.lang] | default: ui %}
 
 {% if page.author and site.data.authors[page.author] %}
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
@@ -16,20 +19,21 @@
 
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    {% assign bio = site.data.i18n[page.lang].bio | default: author.bio %}
+    {% if bio %}<p class="author__bio">{{ bio }}</p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
+    <button class="btn btn--inverse">{{ site.data.i18n[page.lang].follow | default: "Follow" }}</button>
     <ul class="author__urls social-icons">
       {% if author.location %}
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ site.data.i18n[page.lang].location | default: author.location }}</li>
       {% endif %}
       {% if author.employer %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.employer }}</li>
       {% endif %}
       {% if author.uri %}
-        <li><a href="{{ author.uri }}" target="_blank"><i class="fas fa-fw fa-link" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
+        <li><a href="{{ author.uri }}" target="_blank"><i class="fas fa-fw fa-link" aria-hidden="true"></i> {{ ui.website_label | default: "Website" }}</a></li>
       {% endif %}
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}" target="_blank"><i class="fas fa-fw fa-key" aria-hidden="true"></i> Keybase</a></li>

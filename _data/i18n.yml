@@ -1,0 +1,193 @@
+# Stringhe dell'interfaccia nelle tre lingue del sito.
+#
+# Si leggono con site.data.i18n[page.lang]: ogni pagina dichiara nel front matter
+# la sua lingua (lang: en|it|de) e il suo identificativo (pid: cv, about, ...),
+# che serve al selettore di lingua per trovare le pagine gemelle.
+#
+# "xp" e' il dizionario della timeline: traduce le stringhe di _data/experience.yml,
+# che nel file dei dati restano in inglese. Le chiavi sono le stringhe inglesi
+# esatte; cio' che non compare qui resta com'e'. I titoli dei paper non si
+# traducono mai, e infatti non compaiono.
+
+en:
+  name: "English"
+  bio: "Ph.D. Student in Computer Science"
+  location: "Bolzano/Verona - Italy"
+  follow: "Follow"
+  published_in: "Published in"
+  other_languages: "This page in other languages"
+  xp: {}
+  xp_parti: {}
+
+it:
+  name: "Italiano"
+  bio: "Dottorando in Informatica"
+  location: "Bolzano/Verona - Italia"
+  follow: "Seguimi"
+  published_in: "Pubblicato in"
+  other_languages: "Questa pagina in altre lingue"
+  xp:
+    # gruppi e legenda
+    "Education": "Formazione"
+    "Work": "Lavoro"
+    "Publications": "Pubblicazioni"
+    "Model checking": "Verifica di modelli"
+    "Explainable artificial intelligence": "Intelligenza artificiale spiegabile"
+    # formazione
+    "Ph.D. in Computer Science": "Dottorato in Informatica"
+    "XLII cycle, University of Verona": "XLII ciclo, Università di Verona"
+    '<a href="https://www.corsi.univr.it/?ent=cs&id=635" target="_blank">University of Verona</a>': '<a href="https://www.corsi.univr.it/?ent=cs&id=635" target="_blank">Università di Verona</a>'
+    "10/2026 – present, XLII cycle, with scholarship": "10/2026 – oggi, XLII ciclo, con borsa"
+    "Topic: formally certified explanations and robustness verification for machine learning classifiers": "Argomento: spiegazioni formalmente certificate e verifica della robustezza per classificatori di apprendimento automatico"
+    "M.S. in Computer Science & Engineering": "Laurea magistrale in Ingegneria e scienze informatiche"
+    "University of Verona, 109/110": "Università di Verona, 109/110"
+    '<a href="https://www.corsi.univr.it/?ent=cs&id=417" target="_blank">Computer Science and Engineering, University of Verona</a>': '<a href="https://www.corsi.univr.it/?ent=cs&id=417" target="_blank">Ingegneria e scienze informatiche, Università di Verona</a>'
+    "Date: 17/07/2025": "Data: 17/07/2025"
+    "Rate: 109/110": "Voto: 109/110"
+    "Thesis: Explaining Strategies for Expected Impacts": "Tesi: Explaining Strategies for Expected Impacts"
+    'Supervisor: <a href="https://profs.scienze.univr.it/~sala/" target="_blank">Prof. Pietro Sala</a>': 'Relatore: <a href="https://profs.scienze.univr.it/~sala/" target="_blank">Prof. Pietro Sala</a>'
+    'Assistant supervisor: <a href="https://www.linkedin.com/in/emanuele-chini-53419a238/" target="_blank">Emanuele Chini</a>': 'Correlatore: <a href="https://www.linkedin.com/in/emanuele-chini-53419a238/" target="_blank">Emanuele Chini</a>'
+    "M.S. thesis": "Tesi magistrale"
+    "M.S. (Erasmus) in Intelligent Systems and Numerical Applications in Engineering": "Laurea magistrale (Erasmus) in Intelligent Systems and Numerical Applications in Engineering"
+    "Courses: Data Science in Engineering, Computational Intelligence, Programming and Prototyping": "Insegnamenti: Data Science in Engineering, Computational Intelligence, Programming and Prototyping"
+    "B.S. in Computer Science": "Laurea triennale in Informatica"
+    "University of Verona, 108/110": "Università di Verona, 108/110"
+    '<a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">Computer Science, University of Verona</a>': '<a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">Informatica, Università di Verona</a>'
+    "Date: 12/07/2022": "Data: 12/07/2022"
+    "Rate: 108/110": "Voto: 108/110"
+    "Thesis: A system for contact tracing based on BLE devices": "Tesi: A system for contact tracing based on BLE devices"
+    'Supervisor: <a href="https://www.dimi.univr.it/?ent=persona&id=123" target="_blank">Prof. Graziano Pravadelli</a>': 'Relatore: <a href="https://www.dimi.univr.it/?ent=persona&id=123" target="_blank">Prof. Graziano Pravadelli</a>'
+    'Assistant supervisor: <a href="https://sites.google.com/view/florencdemrozi" target="_blank">Florenc Demrozi</a>': 'Correlatore: <a href="https://sites.google.com/view/florencdemrozi" target="_blank">Florenc Demrozi</a>'
+    'Research group: <a href="https://cisd.di.univr.it/area/7" target="_blank">IoT4Care – CISD</a>': 'Gruppo di ricerca: <a href="https://cisd.di.univr.it/area/7" target="_blank">IoT4Care – CISD</a>'
+    "Technical High School in Computer Science": "Diploma di perito informatico"
+    "Technical high school in Computer Science (MIUR)": "Istituto tecnico, indirizzo informatica (MIUR)"
+    # lavoro
+    "Post-graduate research grant": "Assegno di ricerca"
+    "University of Verona": "Università di Verona"
+    "Project: Impact of time-varying parameters on the dimensional distribution of molecules in chemical processes: modeling and analysis": "Progetto: Impatto dei parametri variabili nel tempo sulla distribuzione dimensionale delle molecole nei processi chimici: modellazione e analisi"
+    "Industrial partner: NEWCHEM S.p.A. (Milan, Italy)": "Partner industriale: NEWCHEM S.p.A. (Milano)"
+    'Funding: Ministry of Enterprises and Made in Italy, <a href="https://docs.univr.it/documenti/Concorso/bando/bando412128.pdf" target="_blank">project CB2024MIMIT_NEWCHEM</a>': 'Finanziamento: Ministero delle Imprese e del Made in Italy, <a href="https://docs.univr.it/documenti/Concorso/bando/bando412128.pdf" target="_blank">progetto CB2024MIMIT_NEWCHEM</a>'
+    "University tutoring": "Tutorato universitario"
+    "Software Engineering": "Ingegneria del software"
+    "Programming II": "Programmazione II"
+    "Programming": "Programmazione"
+    "Programming with laboratory": "Programmazione con laboratorio"
+    "B.Sc. Bioinformatics": "Laurea triennale in Bioinformatica"
+    "B.Sc. Computer Science": "Laurea triennale in Informatica"
+    "B.Sc. Applied Mathematics": "Laurea triennale in Matematica applicata"
+    "B.Sc. Computer Science, Bioinformatics": "Lauree triennali in Informatica e Bioinformatica"
+    '<a href="https://www.corsi.univr.it/?ent=cs&id=419" target="_blank">B.Sc. Bioinformatics, University of Verona</a>': '<a href="https://www.corsi.univr.it/?ent=cs&id=419" target="_blank">Laurea triennale in Bioinformatica, Università di Verona</a>'
+    '<a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">B.Sc. Computer Science, University of Verona</a>': '<a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">Laurea triennale in Informatica, Università di Verona</a>'
+    '<a href="https://www.corsi.univr.it/?ent=cs&id=418" target="_blank">B.Sc. Applied Mathematics, University of Verona</a>': '<a href="https://www.corsi.univr.it/?ent=cs&id=418" target="_blank">Laurea triennale in Matematica applicata, Università di Verona</a>'
+    'B.Sc. <a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">Computer Science</a> and <a href="https://www.corsi.univr.it/?ent=cs&id=419" target="_blank">Bioinformatics</a>, University of Verona': 'Lauree triennali in <a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">Informatica</a> e <a href="https://www.corsi.univr.it/?ent=cs&id=419" target="_blank">Bioinformatica</a>, Università di Verona'
+    "03/2025 – 06/2025, a.y. 2024/2025": "03/2025 – 06/2025, a.a. 2024/2025"
+    "11/2024 – 02/2025, a.y. 2024/2025": "11/2024 – 02/2025, a.a. 2024/2025"
+    "04/2024 – 06/2024, a.y. 2023/2024": "04/2024 – 06/2024, a.a. 2023/2024"
+    "03/2024 – 06/2024, a.y. 2023/2024": "03/2024 – 06/2024, a.a. 2023/2024"
+    "03/2024 – 07/2024, a.y. 2023/2024": "03/2024 – 07/2024, a.a. 2023/2024"
+    "03/2023 – 06/2023, a.y. 2022/2023": "03/2023 – 06/2023, a.a. 2022/2023"
+    "10/2022 – 02/2023, a.y. 2022/2023": "10/2022 – 02/2023, a.a. 2022/2023"
+    "Educator": "Educatore"
+    "Digital transition for school staff, G. Verdi, Egna": "Transizione digitale per il personale scolastico, G. Verdi, Egna"
+    "G. Verdi, Egna (South Tyrol)": "G. Verdi, Egna (Alto Adige)"
+    "Integrated digital teaching and digital transition education for school staff": "Didattica digitale integrata e formazione alla transizione digitale per il personale scolastico"
+    "High-school teacher in Computer Science": "Insegnante di Informatica alle superiori"
+    '<a href="https://www.iisgalilei.eu" target="_blank">IIS Galileo Galilei</a>, ITT – Computer Science': '<a href="https://www.iisgalilei.eu" target="_blank">IIS Galileo Galilei</a>, ITT – Informatica'
+    "Subjects: Technology and Engineering of Information and Telecommunications Systems; Systems and Networks; Project Management and Business Organization": "Materie: Tecnologie e progettazione di sistemi informatici e di telecomunicazioni; Sistemi e reti; Gestione progetto e organizzazione d'impresa"
+    # sedi delle pubblicazioni: i titoli dei paper restano in inglese
+    "SUM 2026, Athens, 21-23 October 2026": "SUM 2026, Atene, 21-23 ottobre 2026"
+    "ICTCS 2026, Udine, 7-9 September 2026": "ICTCS 2026, Udine, 7-9 settembre 2026"
+    "PETRI NETS 2026, Hamburg, 22-26 June 2026": "PETRI NETS 2026, Amburgo, 22-26 giugno 2026"
+    "IEEE CAI 2026, Granada, 8-10 May 2026": "IEEE CAI 2026, Granada, 8-10 maggio 2026"
+    "DIS 2025, London, 1-5 June 2025": "DIS 2025, Londra, 1-5 giugno 2025"
+
+  # frammenti sostituiti dentro stringhe piu' lunghe (il testo dei link)
+  xp_parti:
+    ">Course page<": ">Pagina dell'insegnamento<"
+
+de:
+  name: "Deutsch"
+  bio: "Doktorand der Informatik"
+  location: "Bozen/Verona - Italien"
+  follow: "Folgen"
+  published_in: "Veröffentlicht in"
+  other_languages: "Diese Seite in anderen Sprachen"
+  xp:
+    # Gruppen und Legende
+    "Education": "Ausbildung"
+    "Work": "Berufserfahrung"
+    "Publications": "Veröffentlichungen"
+    "Model checking": "Modellprüfung"
+    "Explainable artificial intelligence": "Erklärbare künstliche Intelligenz"
+    # Ausbildung
+    "Ph.D. in Computer Science": "Doktorat in Informatik"
+    "XLII cycle, University of Verona": "XLII. Zyklus, Universität Verona"
+    '<a href="https://www.corsi.univr.it/?ent=cs&id=635" target="_blank">University of Verona</a>': '<a href="https://www.corsi.univr.it/?ent=cs&id=635" target="_blank">Universität Verona</a>'
+    "10/2026 – present, XLII cycle, with scholarship": "10/2026 – heute, XLII. Zyklus, mit Stipendium"
+    "Topic: formally certified explanations and robustness verification for machine learning classifiers": "Thema: formal zertifizierte Erklärungen und Robustheitsverifikation für Klassifikatoren des maschinellen Lernens"
+    "M.S. in Computer Science & Engineering": "Masterstudium in Informatik und Informationstechnik"
+    "University of Verona, 109/110": "Universität Verona, 109/110"
+    '<a href="https://www.corsi.univr.it/?ent=cs&id=417" target="_blank">Computer Science and Engineering, University of Verona</a>': '<a href="https://www.corsi.univr.it/?ent=cs&id=417" target="_blank">Informatik und Informationstechnik, Universität Verona</a>'
+    "Date: 17/07/2025": "Datum: 17.07.2025"
+    "Rate: 109/110": "Note: 109/110"
+    "Thesis: Explaining Strategies for Expected Impacts": "Abschlussarbeit: Explaining Strategies for Expected Impacts"
+    'Supervisor: <a href="https://profs.scienze.univr.it/~sala/" target="_blank">Prof. Pietro Sala</a>': 'Betreuer: <a href="https://profs.scienze.univr.it/~sala/" target="_blank">Prof. Pietro Sala</a>'
+    'Assistant supervisor: <a href="https://www.linkedin.com/in/emanuele-chini-53419a238/" target="_blank">Emanuele Chini</a>': 'Mitbetreuer: <a href="https://www.linkedin.com/in/emanuele-chini-53419a238/" target="_blank">Emanuele Chini</a>'
+    "M.S. thesis": "Masterarbeit"
+    "M.S. (Erasmus) in Intelligent Systems and Numerical Applications in Engineering": "Masterstudium (Erasmus) in Intelligent Systems and Numerical Applications in Engineering"
+    "Courses: Data Science in Engineering, Computational Intelligence, Programming and Prototyping": "Lehrveranstaltungen: Data Science in Engineering, Computational Intelligence, Programming and Prototyping"
+    "B.S. in Computer Science": "Bachelorstudium in Informatik"
+    "University of Verona, 108/110": "Universität Verona, 108/110"
+    '<a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">Computer Science, University of Verona</a>': '<a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">Informatik, Universität Verona</a>'
+    "Date: 12/07/2022": "Datum: 12.07.2022"
+    "Rate: 108/110": "Note: 108/110"
+    "Thesis: A system for contact tracing based on BLE devices": "Abschlussarbeit: A system for contact tracing based on BLE devices"
+    'Supervisor: <a href="https://www.dimi.univr.it/?ent=persona&id=123" target="_blank">Prof. Graziano Pravadelli</a>': 'Betreuer: <a href="https://www.dimi.univr.it/?ent=persona&id=123" target="_blank">Prof. Graziano Pravadelli</a>'
+    'Assistant supervisor: <a href="https://sites.google.com/view/florencdemrozi" target="_blank">Florenc Demrozi</a>': 'Mitbetreuer: <a href="https://sites.google.com/view/florencdemrozi" target="_blank">Florenc Demrozi</a>'
+    'Research group: <a href="https://cisd.di.univr.it/area/7" target="_blank">IoT4Care – CISD</a>': 'Forschungsgruppe: <a href="https://cisd.di.univr.it/area/7" target="_blank">IoT4Care – CISD</a>'
+    "Technical High School in Computer Science": "Fachoberschule für Informatik"
+    "Technical high school in Computer Science (MIUR)": "Technische Oberschule, Fachrichtung Informatik (MIUR)"
+    # Berufserfahrung
+    "Post-graduate research grant": "Forschungsstipendium"
+    "University of Verona": "Universität Verona"
+    "Project: Impact of time-varying parameters on the dimensional distribution of molecules in chemical processes: modeling and analysis": "Projekt: Einfluss zeitlich veränderlicher Parameter auf die Größenverteilung von Molekülen in chemischen Prozessen: Modellierung und Analyse"
+    "Industrial partner: NEWCHEM S.p.A. (Milan, Italy)": "Industriepartner: NEWCHEM S.p.A. (Mailand)"
+    'Funding: Ministry of Enterprises and Made in Italy, <a href="https://docs.univr.it/documenti/Concorso/bando/bando412128.pdf" target="_blank">project CB2024MIMIT_NEWCHEM</a>': 'Förderung: Ministerium für Unternehmen und Made in Italy, <a href="https://docs.univr.it/documenti/Concorso/bando/bando412128.pdf" target="_blank">Projekt CB2024MIMIT_NEWCHEM</a>'
+    "University tutoring": "Tutortätigkeit an der Universität"
+    "Programming II": "Programmierung II"
+    "Programming": "Programmierung"
+    "Programming with laboratory": "Programmierung mit Laborübung"
+    "B.Sc. Bioinformatics": "Bachelor Bioinformatik"
+    "B.Sc. Computer Science": "Bachelor Informatik"
+    "B.Sc. Applied Mathematics": "Bachelor Angewandte Mathematik"
+    "B.Sc. Computer Science, Bioinformatics": "Bachelor Informatik und Bioinformatik"
+    '<a href="https://www.corsi.univr.it/?ent=cs&id=419" target="_blank">B.Sc. Bioinformatics, University of Verona</a>': '<a href="https://www.corsi.univr.it/?ent=cs&id=419" target="_blank">Bachelor Bioinformatik, Universität Verona</a>'
+    '<a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">B.Sc. Computer Science, University of Verona</a>': '<a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">Bachelor Informatik, Universität Verona</a>'
+    '<a href="https://www.corsi.univr.it/?ent=cs&id=418" target="_blank">B.Sc. Applied Mathematics, University of Verona</a>': '<a href="https://www.corsi.univr.it/?ent=cs&id=418" target="_blank">Bachelor Angewandte Mathematik, Universität Verona</a>'
+    'B.Sc. <a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">Computer Science</a> and <a href="https://www.corsi.univr.it/?ent=cs&id=419" target="_blank">Bioinformatics</a>, University of Verona': 'Bachelor <a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">Informatik</a> und <a href="https://www.corsi.univr.it/?ent=cs&id=419" target="_blank">Bioinformatik</a>, Universität Verona'
+    "03/2025 – 06/2025, a.y. 2024/2025": "03/2025 – 06/2025, Studienjahr 2024/2025"
+    "11/2024 – 02/2025, a.y. 2024/2025": "11/2024 – 02/2025, Studienjahr 2024/2025"
+    "04/2024 – 06/2024, a.y. 2023/2024": "04/2024 – 06/2024, Studienjahr 2023/2024"
+    "03/2024 – 06/2024, a.y. 2023/2024": "03/2024 – 06/2024, Studienjahr 2023/2024"
+    "03/2024 – 07/2024, a.y. 2023/2024": "03/2024 – 07/2024, Studienjahr 2023/2024"
+    "03/2023 – 06/2023, a.y. 2022/2023": "03/2023 – 06/2023, Studienjahr 2022/2023"
+    "10/2022 – 02/2023, a.y. 2022/2023": "10/2022 – 02/2023, Studienjahr 2022/2023"
+    "Educator": "Erzieher"
+    "Digital transition for school staff, G. Verdi, Egna": "Digitaler Wandel für Schulpersonal, G. Verdi, Neumarkt"
+    "G. Verdi, Egna (South Tyrol)": "G. Verdi, Neumarkt (Südtirol)"
+    "Integrated digital teaching and digital transition education for school staff": "Integrierte digitale Didaktik und Weiterbildung zum digitalen Wandel für Schulpersonal"
+    "High-school teacher in Computer Science": "Oberschullehrer für Informatik"
+    "IIS G. Galilei, Bolzano": "IIS G. Galilei, Bozen"
+    "IIS G. Galilei, Bolzano, 2012-2018": "IIS G. Galilei, Bozen, 2012-2018"
+    '<a href="https://www.iisgalilei.eu" target="_blank">IIS G. Galilei, Bolzano</a>': '<a href="https://www.iisgalilei.eu" target="_blank">IIS G. Galilei, Bozen</a>'
+    '<a href="https://www.iisgalilei.eu" target="_blank">IIS Galileo Galilei</a>, ITT – Computer Science': '<a href="https://www.iisgalilei.eu" target="_blank">IIS Galileo Galilei</a>, ITT – Informatik'
+    "Subjects: Technology and Engineering of Information and Telecommunications Systems; Systems and Networks; Project Management and Business Organization": "Fächer: Technologie und Entwurf von Informatik- und Telekommunikationssystemen; Systeme und Netzwerke; Projektmanagement und Betriebsorganisation"
+    # Konferenzorte: die Titel der Paper bleiben englisch
+    "SUM 2026, Athens, 21-23 October 2026": "SUM 2026, Athen, 21.–23. Oktober 2026"
+    "ICTCS 2026, Udine, 7-9 September 2026": "ICTCS 2026, Udine, 7.–9. September 2026"
+    "PETRI NETS 2026, Hamburg, 22-26 June 2026": "PETRI NETS 2026, Hamburg, 22.–26. Juni 2026"
+    "IEEE CAI 2026, Granada, 8-10 May 2026": "IEEE CAI 2026, Granada, 8.–10. Mai 2026"
+    "DIS 2025, London, 1-5 June 2025": "DIS 2025, London, 1.–5. Juni 2025"
+  # Fragmente, die in laengeren Zeichenketten ersetzt werden (Linktexte)
+  xp_parti:
+    ">Course page<": ">Seite der Lehrveranstaltung<"

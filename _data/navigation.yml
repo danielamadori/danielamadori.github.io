@@ -1,22 +1,27 @@
-# main links links
-main:
+# Voci del menu, una lista per lingua.
+#
+# Il masthead legge site.data.navigation[page.lang] e ripiega su "main" per le
+# pagine che non dichiarano una lingua (le pagine di servizio del tema).
+
+en: &MENU_EN
   - title: "CV"
-    url: /cv/
+    url: /en/cv/
 
   - title: "Publications"
-    url: /publications/
+    url: /en/publications/
 
-  #- title: "Teaching"
-  #  url: /teaching/    
-    
-  #- title: "Portfolio"
-  #  url: /portfolio/
+main: *MENU_EN
 
-  #- title: "Talks"
-  #  url: /talks/    
-    
-  #- title: "Blog Posts"
-  #  url: /year-archive/
-    
-  #- title: "Guide"
-  #  url: /markdown/
+it:
+  - title: "CV"
+    url: /it/cv/
+
+  - title: "Pubblicazioni"
+    url: /it/publications/
+
+de:
+  - title: "Lebenslauf"
+    url: /de/cv/
+
+  - title: "Veröffentlichungen"
+    url: /de/publications/

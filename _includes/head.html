@@ -20,13 +20,28 @@
 
 <meta http-equiv="cleartype" content="on">
 
+{% comment %}
+  Le altre lingue della stessa pagina, per i motori di ricerca: si trovano per pid.
+  x-default punta all'inglese, che e' la lingua di lavoro.
+{% endcomment %}
+{% if page.pid %}
+  {% for l in site.lingue %}
+    {% assign gemella = site.pages | where: "pid", page.pid | where: "lang", l | first %}
+    {% if gemella %}<link rel="alternate" hreflang="{{ l }}" href="{{ base_path }}{{ gemella.url }}">{% endif %}
+  {% endfor %}
+  {% assign inglese = site.pages | where: "pid", page.pid | where: "lang", "en" | first %}
+  {% if inglese %}<link rel="alternate" hreflang="x-default" href="{{ base_path }}{{ inglese.url }}">{% endif %}
+{% endif %}
+
 
 {% if page.author and site.data.authors[page.author] %}
   {% assign author = site.data.authors[page.author] %}
 {% else %}
   {% assign author = site.author %}
 {% endif %}
+{% comment %}La descrizione segue la lingua della pagina.{% endcomment %}
+{% assign bio = site.data.i18n[page.lang].bio | default: author.bio %}
 
-<meta name="description" content="{{ author.name }}{% if author.bio %}, {{ author.bio }}{% endif %}{% if author.linkedin %}, Linkedin{% endif %}{% if author.github %}, Github{% endif %}, Computer Engineer, Computer Scientist, Computer Engineering, Computer Science, University of Verona, Univr, Università degli studi di Verona, CISD">
+<meta name="description" content="{{ author.name }}{% if bio %}, {{ bio }}{% endif %}{% if author.linkedin %}, Linkedin{% endif %}{% if author.github %}, Github{% endif %}, Computer Engineer, Computer Scientist, Computer Engineering, Computer Science, University of Verona, Univr, Università degli studi di Verona, CISD">
 
-<meta name="keywords" content="{{ author.name }}{% if author.bio %}, {{ author.bio }}{% endif %}{% if author.linkedin %}, Linkedin{% endif %}{% if author.github %}, Github{% endif %}, Computer Engineer, Computer Scientist, Computer Engineering, Computer Science, University of Verona, Univr, Università degli studi di Verona, CISD">
+<meta name="keywords" content="{{ author.name }}{% if bio %}, {{ bio }}{% endif %}{% if author.linkedin %}, Linkedin{% endif %}{% if author.github %}, Github{% endif %}, Computer Engineer, Computer Scientist, Computer Engineering, Computer Science, University of Verona, Univr, Università degli studi di Verona, CISD">

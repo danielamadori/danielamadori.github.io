@@ -1,0 +1,48 @@
+{% comment %}
+  Selettore di lingua.
+
+  Ogni pagina tradotta dichiara nel front matter la lingua (lang: en|it|de) e un
+  identificativo comune alle sue gemelle (pid: about, cv, publications, ...).
+  Qui si cercano le gemelle per pid e si costruisce la terna EN · IT · DE.
+
+  Niente <ul> annidata nel menu: il tema impagina le liste per conto suo e il
+  selettore andava a capo. Solo span, su una riga sola.
+
+  Le pagine di servizio del tema non hanno pid e non mostrano nulla.
+{% endcomment %}
+{% if page.pid %}
+<span class="lingue" role="group" aria-label="{{ site.data.i18n[page.lang].other_languages | default: 'Languages' }}">
+{%- for l in site.lingue -%}
+{%- unless forloop.first %}<span class="lingue__sep" aria-hidden="true">·</span>{% endunless -%}
+{%- if l == page.lang -%}
+<span class="lingue__ora" aria-current="page">{{ l | upcase }}</span>
+{%- else -%}
+{%- assign gemella = site.pages | where: "pid", page.pid | where: "lang", l | first -%}
+<a href="{% if gemella %}{{ gemella.url }}{% else %}/{{ l }}/{% endif %}" hreflang="{{ l }}" lang="{{ l }}" title="{{ site.data.i18n[l].name }}">{{ l | upcase }}</a>
+{%- endif -%}
+{%- endfor -%}
+</span>
+
+<style>
+.lingue{display:inline-flex;align-items:center;white-space:nowrap;
+        font-size:.72rem;font-weight:600;letter-spacing:.06em}
+.lingue__sep{color:#bfc7d1;padding:0 .35em}
+.lingue a{color:#9AA5B1;text-decoration:none}
+.lingue a:hover,.lingue a:focus{color:#52adc8;text-decoration:underline}
+.lingue__ora{color:#494e52}
+</style>
+
+<script>
+  /* La scelta fatta qui vale per i prossimi arrivi sulla radice del sito.
+     Niente commenti con la doppia barra: il layout compress del tema toglie
+     gli a capo e si mangerebbe il resto dello script. */
+  (function () {
+    var v = document.querySelectorAll('.lingue a'), i;
+    for (i = 0; i < v.length; i++) {
+      v[i].addEventListener('click', function () {
+        try { localStorage.setItem('lingua', this.getAttribute('hreflang')); } catch (e) {}
+      });
+    }
+  })();
+</script>
+{% endif %}

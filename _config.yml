@@ -7,6 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
+# Lingue del sito. Ogni pagina tradotta dichiara lang: e pid: nel front matter;
+# il selettore e gli hreflang si costruiscono da qui.
+lingue                   : ["en", "it", "de"]
 title                    : "Daniel Amadori"
 title_separator          : "-"
 name                     : &name "Daniel Amadori"

@@ -1,0 +1,19 @@
+---
+permalink: /en/portfolio/
+lang: en
+pid: portfolio
+layout: archive
+title: "Portfolio"
+author_profile: true
+sitemap: false
+redirect_from:
+  - /portfolio/
+---
+
+{% include base_path %}
+
+
+{% for post in site.portfolio %}
+  {% include archive-single.html %}
+{% endfor %}
+

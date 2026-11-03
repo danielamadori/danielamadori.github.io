@@ -1,12 +1,14 @@
 ---
+permalink: /de/publications/
+lang: de
+pid: publications
+title: "Veröffentlichungen"
 layout: archive
-title: "Publications"
-permalink: /publications/
 author_profile: true
 ---
 
 {% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
+  Meine Artikel finden Sie auch auf <u><a href="{{author.googlescholar}}">meinem Google-Scholar-Profil</a>.</u>
 {% endif %}
 
 {% include base_path %}

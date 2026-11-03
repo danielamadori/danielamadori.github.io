@@ -1,9 +1,13 @@
 ---
+permalink: /en/sitemap/
+lang: en
+pid: sitemap
 layout: archive
 title: "Sitemap"
-permalink: /sitemap/
 author_profile: true
 sitemap: false
+redirect_from:
+  - /sitemap/
 ---
 
 {% include base_path %}
@@ -11,9 +15,9 @@ sitemap: false
 A list of all the posts and pages found on the site. For you robots out there is an [XML version]({{base_path}}/sitemap.xml) available for digesting as well.
 
 <h2>Pages</h2>
-{% for post in site.pages %}
+{% for post in site.pages %}{% if post.lang == page.lang %}
   {% include archive-single.html %}
-{% endfor %}
+{% endif %}{% endfor %}
 
 <!--
 For remove pages from sitemap
