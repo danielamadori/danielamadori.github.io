@@ -39,7 +39,9 @@
 {% else %}
   {% assign author = site.author %}
 {% endif %}
+{% comment %}La descrizione segue la lingua della pagina.{% endcomment %}
+{% assign bio = site.data.i18n[page.lang].bio | default: author.bio %}
 
-<meta name="description" content="{{ author.name }}{% if author.bio %}, {{ author.bio }}{% endif %}{% if author.linkedin %}, Linkedin{% endif %}{% if author.github %}, Github{% endif %}, Computer Engineer, Computer Scientist, Computer Engineering, Computer Science, University of Verona, Univr, Università degli studi di Verona, CISD">
+<meta name="description" content="{{ author.name }}{% if bio %}, {{ bio }}{% endif %}{% if author.linkedin %}, Linkedin{% endif %}{% if author.github %}, Github{% endif %}, Computer Engineer, Computer Scientist, Computer Engineering, Computer Science, University of Verona, Univr, Università degli studi di Verona, CISD">
 
-<meta name="keywords" content="{{ author.name }}{% if author.bio %}, {{ author.bio }}{% endif %}{% if author.linkedin %}, Linkedin{% endif %}{% if author.github %}, Github{% endif %}, Computer Engineer, Computer Scientist, Computer Engineering, Computer Science, University of Verona, Univr, Università degli studi di Verona, CISD">
+<meta name="keywords" content="{{ author.name }}{% if bio %}, {{ bio }}{% endif %}{% if author.linkedin %}, Linkedin{% endif %}{% if author.github %}, Github{% endif %}, Computer Engineer, Computer Scientist, Computer Engineering, Computer Science, University of Verona, Univr, Università degli studi di Verona, CISD">
