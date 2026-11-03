@@ -27,7 +27,7 @@ excerpt: >-
   auxiliary of the drop phase being projected away within each tree step, and is the compilation
   core of a compile-once, read-many explainer.
 date: 2026-09-07
-venue: 'Italian Conference on Theoretical Computer Science (ICTCS 2026), CEUR-WS.org vol. 4269, pp. 288-300'
+venue: 'Italian Conference on Theoretical Computer Science (ICTCS 2026), Udine, Italy, CEUR-WS.org vol. 4269, pp. 288-300'
 paperurl: 'https://ceur-ws.org/Vol-4269/paper53.pdf'
 citation: 'Amadori, D., Chini, E., Sala, P., Tosato, E.M.S. (2026). &quot;Compiling the Plurality Winner of a Random Forest into OBDDs via Margin Absorption.&quot; <i>Italian Conference on Theoretical Computer Science (ICTCS 2026)</i>, CEUR-WS.org vol. 4269, pp. 288-300.'
 ---

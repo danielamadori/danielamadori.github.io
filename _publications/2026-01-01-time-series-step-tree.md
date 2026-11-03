@@ -17,12 +17,12 @@ excerpt: >-
   analysis. Future work will focus on extending TSST to multivariate TS and further empirical
   validation across diverse datasets.
 date: 2026-01-01
-venue: '8th International Conference on the Dynamics of Information Systems (DIS 2025)'
+venue: '8th International Conference on the Dynamics of Information Systems (DIS 2025), London, United Kingdom, LNCS vol. 15940, pp. 201-216'
 paperurl: 'https://link.springer.com/chapter/10.1007/978-3-032-16469-8_14'
-citation: 'Zare, O., Sala, P., Amadori, D., Chini, E., Joloudari, J.H. (2026). &quot;Time Series Step Tree: A Novel Interpretable Method for Prompt Classification of Time Series.&quot; <i>8th International Conference on the Dynamics of Information Systems (DIS 2025)</i>.'
+citation: 'Zare, O., Sala, P., Amadori, D., Chini, E., Joloudari, J.H. (2026). &quot;Time Series Step Tree: A Novel Interpretable Method for Prompt Classification of Time Series.&quot; <i>8th International Conference on the Dynamics of Information Systems (DIS 2025), London, United Kingdom, LNCS vol. 15940, pp. 201-216</i>.'
 ---
 [Read the paper here](https://link.springer.com/chapter/10.1007/978-3-032-16469-8_14)
 
 DOI: [10.1007/978-3-032-16469-8_14](https://doi.org/10.1007/978-3-032-16469-8_14)
 
-Recommended citation: Zare, O., Sala, P., Amadori, D., Chini, E., Joloudari, J.H. (2026). "Time Series Step Tree: A Novel Interpretable Method for Prompt Classification of Time Series." <i>8th International Conference on the Dynamics of Information Systems (DIS 2025)</i>.
+Recommended citation: Zare, O., Sala, P., Amadori, D., Chini, E., Joloudari, J.H. (2026). "Time Series Step Tree: A Novel Interpretable Method for Prompt Classification of Time Series." <i>8th International Conference on the Dynamics of Information Systems (DIS 2025), London, United Kingdom, LNCS vol. 15940, pp. 201-216</i>.
