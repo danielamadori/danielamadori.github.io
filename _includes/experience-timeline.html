@@ -96,6 +96,37 @@
 <script>
 (function () {
   var dati = {{ site.data.experience | jsonify }};
+
+  /* Le stringhe nella lingua della pagina. I dati di _data/experience.yml restano
+     in inglese; qui si traducono con il dizionario di _data/i18n.yml, per
+     corrispondenza esatta (xp) o per frammento dentro i testi dei link (xp_parti).
+     Cio' che non sta nel dizionario resta com'e': i titoli dei paper, per esempio,
+     che non si traducono mai. Niente commenti con la doppia barra: il layout
+     compress del tema toglie gli a capo e si mangerebbe il resto dello script. */
+  var VOC = {{ site.data.i18n[page.lang].xp | jsonify }} || {};
+  var PARTI = {{ site.data.i18n[page.lang].xp_parti | jsonify }} || {};
+  function T(s) {
+    if (typeof s !== 'string') { return s; }
+    if (VOC[s]) { return VOC[s]; }
+    for (var k in PARTI) { if (s.indexOf(k) >= 0) { s = s.split(k).join(PARTI[k]); } }
+    return s;
+  }
+  (function trad(o) {
+    if (!o || typeof o !== 'object') { return; }
+    var i;
+    if (o.length !== undefined) {
+      for (i = 0; i < o.length; i++) {
+        if (typeof o[i] === 'string') { o[i] = T(o[i]); } else { trad(o[i]); }
+      }
+      return;
+    }
+    var campi = ['name', 'detail', 'label', 'where'];
+    for (i = 0; i < campi.length; i++) {
+      if (typeof o[campi[i]] === 'string') { o[campi[i]] = T(o[campi[i]]); }
+    }
+    var rami = ['groups', 'items', 'children', 'legend', 'notes', 'marker'];
+    for (i = 0; i < rami.length; i++) { if (o[rami[i]]) { trad(o[rami[i]]); } }
+  })(dati);
   var nomiTinta = {};
   var ordineTinta = {};
   (dati.legend || []).forEach(function (v, i) { nomiTinta[v.kind] = v.label; ordineTinta[v.kind] = i; });

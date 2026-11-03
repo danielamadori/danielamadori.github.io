@@ -1,0 +1,17 @@
+---
+permalink: /en/teaching/
+lang: en
+pid: teaching
+layout: archive
+title: "Teaching"
+author_profile: true
+sitemap: false
+redirect_from:
+  - /teaching/
+---
+
+{% include base_path %}
+
+{% for post in site.teaching reversed %}
+  {% include archive-single.html %}
+{% endfor %}

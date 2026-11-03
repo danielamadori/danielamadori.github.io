@@ -1,0 +1,46 @@
+{% comment %}
+  Selettore di lingua.
+
+  Ogni pagina tradotta dichiara nel front matter la lingua (lang: en|it|de) e un
+  identificativo comune alle sue gemelle (pid: about, cv, publications, ...).
+  Qui si cercano le gemelle per pid e si costruisce la terna EN · IT · DE.
+
+  Le pagine di servizio del tema non hanno pid e non mostrano nulla.
+{% endcomment %}
+{% if page.pid %}
+<ul class="lingue" aria-label="{{ site.data.i18n[page.lang].other_languages | default: 'Languages' }}">
+  {% for l in site.lingue %}
+    {% assign gemella = site.pages | where: "pid", page.pid | where: "lang", l | first %}
+    {% if l == page.lang %}
+      <li><span class="lingue__ora" aria-current="page">{{ l | upcase }}</span></li>
+    {% elsif gemella %}
+      <li><a href="{{ gemella.url }}" hreflang="{{ l }}" lang="{{ l }}" title="{{ site.data.i18n[l].name }}">{{ l | upcase }}</a></li>
+    {% else %}
+      <li><a href="/{{ l }}/" hreflang="{{ l }}" lang="{{ l }}" title="{{ site.data.i18n[l].name }}">{{ l | upcase }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<style>
+.lingue{list-style:none;display:flex;gap:.1em;margin:0;padding:0;font-size:.8em;letter-spacing:.04em}
+.lingue li{margin:0;padding:0}
+.lingue li + li::before{content:"·";color:#9AA5B1;padding:0 .25em}
+.lingue a{color:#9AA5B1;text-decoration:none}
+.lingue a:hover,.lingue a:focus{color:#52adc8;text-decoration:underline}
+.lingue__ora{color:#494e52;font-weight:700}
+</style>
+
+<script>
+  /* La scelta fatta qui vale per i prossimi arrivi sulla radice del sito.
+     Niente commenti con la doppia barra: il layout compress del tema toglie
+     gli a capo e si mangerebbe il resto dello script. */
+  (function () {
+    var v = document.querySelectorAll('.lingue a'), i;
+    for (i = 0; i < v.length; i++) {
+      v[i].addEventListener('click', function () {
+        try { localStorage.setItem('lingua', this.getAttribute('hreflang')); } catch (e) {}
+      });
+    }
+  })();
+</script>
+{% endif %}

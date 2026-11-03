@@ -268,3 +268,47 @@ it-IT:
 
 # Another locale
 # --------------
+
+de: &DEFAULT_DE
+  page                       : "Seite"
+  pagination_previous        : "Zurück"
+  pagination_next            : "Weiter"
+  breadcrumb_home_label      : "Startseite"
+  breadcrumb_separator       : "/"
+  toc_label                  : "Auf dieser Seite"
+  ext_link_label             : "Link"
+  less_than                  : "weniger als"
+  minute_read                : "Minuten Lesezeit"
+  share_on_label             : "Teilen auf"
+  meta_label                 :
+  tags_label                 : "Schlagwörter:"
+  categories_label           : "Kategorien:"
+  date_label                 : "Aktualisiert:"
+  comments_label             : "Kommentar schreiben"
+  comments_title             :
+  more_label                 : "Mehr erfahren"
+  related_label              : "Das könnte Sie auch interessieren"
+  follow_label               : "Folgen:"
+  feed_label                 : "Feed"
+  powered_by                 : "Erstellt mit"
+  website_label              : "Website"
+  email_label                : "E-Mail"
+  recent_posts               : "Neueste Beiträge"
+  undefined_wpm              : "Parameter words_per_minute ist in _config.yml nicht definiert"
+  comment_form_info          :
+  comment_form_comment_label :
+  comment_form_md_info       :
+  comment_form_name_label    :
+  comment_form_email_label   :
+  comment_form_website_label :
+  comment_btn_submit         :
+  comment_btn_submitted      :
+  comment_success_msg        :
+  comment_error_msg          :
+  loading_label              :
+de-DE:
+  <<: *DEFAULT_DE
+de-AT:
+  <<: *DEFAULT_DE
+de-CH:
+  <<: *DEFAULT_DE

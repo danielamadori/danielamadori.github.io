@@ -1,0 +1,52 @@
+---
+permalink: /
+layout: plain
+sitemap: false
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daniel Amadori</title>
+<meta name="robots" content="noindex, follow">
+{% for l in site.lingue %}<link rel="alternate" hreflang="{{ l }}" href="{{ site.url }}/{{ l }}/">
+{% endfor %}<link rel="alternate" hreflang="x-default" href="{{ site.url }}/en/">
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+       color:#494e52;background:#fff;margin:0;min-height:100vh;
+       display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.4em}
+  h1{font-weight:600;font-size:1.3rem;margin:0}
+  ul{list-style:none;display:flex;gap:1.2em;margin:0;padding:0;font-size:1.05rem}
+  a{color:#52adc8;text-decoration:none}
+  a:hover,a:focus{text-decoration:underline}
+  p{color:#9AA5B1;font-size:.85rem;margin:0}
+</style>
+<script>
+  /* Smistamento per lingua: vale la scelta fatta in precedenza col selettore,
+     altrimenti la lingua del browser. Chi arriva da un indirizzo gia' con il
+     prefisso (/it/cv/, /de/, ...) non passa di qui e non viene spostato. */
+  (function () {
+    var L = {{ site.lingue | jsonify }}, scelta = null, i, j, c, va = 'en';
+    try { scelta = localStorage.getItem('lingua'); } catch (e) { scelta = null; }
+    var chieste = scelta ? [scelta] :
+      (navigator.languages && navigator.languages.length ? navigator.languages :
+       [navigator.language || navigator.userLanguage || 'en']);
+    cerca:
+    for (i = 0; i < chieste.length; i++) {
+      c = String(chieste[i]).toLowerCase().slice(0, 2);
+      for (j = 0; j < L.length; j++) { if (c === L[j]) { va = L[j]; break cerca; } }
+    }
+    location.replace('/' + va + '/');
+  })();
+</script>
+</head>
+<body>
+  <h1>Daniel Amadori</h1>
+  <ul>
+    {% for l in site.lingue %}<li><a href="/{{ l }}/" hreflang="{{ l }}" lang="{{ l }}">{{ site.data.i18n[l].name }}</a></li>
+    {% endfor %}
+  </ul>
+  <p>English &middot; Italiano &middot; Deutsch</p>
+</body>
+</html>
