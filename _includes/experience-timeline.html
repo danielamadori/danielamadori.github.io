@@ -66,6 +66,7 @@
 .xp__bar--edu{background:var(--edu)}.xp__bar--edu-soft{background:var(--edu-soft)}
 .xp__bar--edu-light{background:var(--edu-light)}.xp__bar--work{background:var(--work)}
 .xp__bar--work-soft{background:var(--work-soft)}
+.xp__bar--tronca{border-radius:0 7px 7px 0}
 .xp__bar--open::after{content:"";position:absolute;right:-1.1em;top:50%;transform:translateY(-50%);
   border:.42em solid transparent;border-left-color:var(--edu-soft)}
 .xp__dot{position:absolute;top:50%;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:2px;transform:rotate(45deg)}
@@ -122,7 +123,7 @@
   function finisce(v) { return v.ongoing ? 1e9 : anno(v.end || v.start); }
   function resta(v) {
     if (v.children) return v.children.some(resta);
-    return finisce(v) > DA + 1e-6;
+    return finisce(v) > inizio + 1e-6;
   }
   function clona(o) {
     var c = {}, k;
@@ -131,6 +132,14 @@
   }
   var gruppi = dati.groups;
   if (DA) {
+    /* La finestra comincia un mese prima del taglio, o prima se una pubblicazione
+       cade li'. Resta tutto cio' che era ancora in corso quando si apre: cosi' si
+       vede l'ultimo tratto della magistrale, non solo quello che e' venuto dopo. */
+    var inizio = DA - 1 / 12;
+    dati.groups.forEach(function (g) {
+      if (g.id !== 'publications') return;
+      g.items.forEach(function (v) { inizio = Math.min(inizio, anno(v.start)); });
+    });
     gruppi = gruppi.map(function (g) {
       if (g.id === 'publications') return g;
       var g2 = clona(g);
@@ -143,15 +152,6 @@
       return g2;
     }).filter(function (g) { return g.items.length > 0; });
 
-    var minimo = DA;
-    gruppi.forEach(function (g) {
-      g.items.forEach(function (v) {
-        if (v.children) { v.children.forEach(function (c) { minimo = Math.min(minimo, anno(c.start)); }); }
-        else { minimo = Math.min(minimo, anno(v.start)); }
-      });
-    });
-    /* la finestra comincia un mese prima del taglio, o prima se una voce cade li' */
-    var inizio = Math.min(DA - 1 / 12, minimo);
     var passi = [inizio];
     for (var x = Math.ceil((inizio + 0.3) * 2) / 2; x <= A.end - 0.25; x += 0.5) { passi.push(x); }
     A = {start: inizio - 0.08, break: inizio - 0.08, break_share: 0, end: A.end, ticks: passi};
@@ -224,7 +224,9 @@
     } else {
       el = document.createElement('span');
       el.className = 'xp__bar xp__bar--' + (v.kind || tinta) + (v.ongoing ? ' xp__bar--open' : '');
-      var a = Math.max(pos(anno(v.start)), 0);
+      var vero = pos(anno(v.start));
+      if (vero < -0.2) { el.className += ' xp__bar--tronca'; }
+      var a = Math.max(vero, 0);
       var b = v.ongoing ? Math.max(pos(OGGI), a + 3.2) : pos(anno(v.end));
       el.style.left = a.toFixed(3) + '%';
       el.style.width = Math.max(b - a, 0.5).toFixed(3) + '%';
