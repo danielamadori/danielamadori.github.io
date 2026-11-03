@@ -21,11 +21,22 @@ groups:
     items:
       - name: Ph.D. in Computer Science
         detail: XLII cycle, University of Verona
+        where: '<a href="https://www.corsi.univr.it/?ent=cs&id=635" target="_blank">University of Verona</a>'
+        notes:
+          - '10/2026 – present, XLII cycle, with scholarship'
+          - 'Topic: formally certified explanations and robustness verification for machine learning classifiers'
         start: 2026-10
         ongoing: true
         kind: edu-soft
       - name: M.S. in Computer Science & Engineering
         detail: University of Verona, 109/110
+        where: '<a href="https://www.corsi.univr.it/?ent=cs&id=417" target="_blank">Computer Science and Engineering, University of Verona</a>'
+        notes:
+          - 'Date: 17/07/2025'
+          - 'Rate: 109/110'
+          - 'Thesis: Explaining Strategies for Expected Impacts'
+          - 'Supervisor: <a href="https://profs.scienze.univr.it/~sala/" target="_blank">Prof. Pietro Sala</a>'
+          - 'Assistant supervisor: <a href="https://www.linkedin.com/in/emanuele-chini-53419a238/" target="_blank">Emanuele Chini</a>'
         start: 2024-02        # dalla fine dell'Erasmus
         end: 2025-07
         kind: edu
@@ -36,16 +47,32 @@ groups:
           kind: mc
       - name: M.S. (Erasmus) in Intelligent Systems and Numerical Applications in Engineering
         detail: ULPGC, Las Palmas de Gran Canaria
+        where: '<a href="https://www2.ulpgc.es/plan-estudio/5005" target="_blank">Intelligent Systems and Numerical Applications in Engineering, ULPGC</a>'
+        notes:
+          - '09/2023 – 02/2024'
+          - 'Courses: Data Science in Engineering, Computational Intelligence, Programming and Prototyping'
         start: 2023-09
         end: 2024-02
         kind: edu-light
       - name: B.S. in Computer Science
         detail: University of Verona, 108/110
+        where: '<a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">Computer Science, University of Verona</a>'
+        notes:
+          - 'Date: 12/07/2022'
+          - 'Rate: 108/110'
+          - 'Thesis: A system for contact tracing based on BLE devices'
+          - 'Supervisor: <a href="https://www.dimi.univr.it/?ent=persona&id=123" target="_blank">Prof. Graziano Pravadelli</a>'
+          - 'Assistant supervisor: <a href="https://sites.google.com/view/florencdemrozi" target="_blank">Florenc Demrozi</a>'
+          - 'Research group: <a href="https://cisd.di.univr.it/area/7" target="_blank">IoT4Care – CISD</a>'
         start: 2018-09
         end: 2022-07
         kind: edu
       - name: Technical High School in Computer Science
         detail: IIS G. Galilei, Bolzano, 2012-2018
+        where: '<a href="https://www.iisgalilei.eu" target="_blank">IIS G. Galilei, Bolzano</a>'
+        notes:
+          - '09/2012 – 07/2018'
+          - 'Technical high school in Computer Science (MIUR)'
         start: 2018-07
         point: true
         kind: edu
@@ -55,6 +82,13 @@ groups:
     items:
       - name: Post-graduate research grant
         detail: NEWCHEM, MIMIT, Prof. Pietro Sala
+        where: University of Verona
+        notes:
+          - '10/2025 – 09/2026'
+          - 'Project: Impact of time-varying parameters on the dimensional distribution of molecules in chemical processes: modeling and analysis'
+          - 'Industrial partner: NEWCHEM S.p.A. (Milan, Italy)'
+          - 'Supervisor: <a href="https://profs.scienze.univr.it/~sala/" target="_blank">Prof. Pietro Sala</a>'
+          - 'Funding: Ministry of Enterprises and Made in Italy, <a href="https://docs.univr.it/documenti/Concorso/bando/bando412128.pdf" target="_blank">project CB2024MIMIT_NEWCHEM</a>'
         start: 2025-10
         end: 2026-09
         kind: work
@@ -100,11 +134,19 @@ groups:
             end: 2023-02
       - name: Educator
         detail: Digital transition for school staff, G. Verdi, Egna
+        where: 'G. Verdi, Egna (South Tyrol)'
+        notes:
+          - '10/2024 – 04/2025'
+          - 'Integrated digital teaching and digital transition education for school staff'
         start: 2024-10
         end: 2025-04
         kind: work
       - name: High-school teacher in Computer Science
         detail: IIS G. Galilei, Bolzano
+        where: '<a href="https://www.iisgalilei.eu" target="_blank">IIS Galileo Galilei</a>, ITT – Computer Science'
+        notes:
+          - '09/2021 – 08/2022'
+          - 'Subjects: Technology and Engineering of Information and Telecommunications Systems; Systems and Networks; Project Management and Business Organization'
         start: 2021-09
         end: 2022-08
         kind: work
