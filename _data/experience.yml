@@ -98,38 +98,74 @@ groups:
         children:
           - name: Software Engineering
             detail: B.Sc. Bioinformatics
+            where: '<a href="https://www.corsi.univr.it/?ent=cs&id=419" target="_blank">B.Sc. Bioinformatics, University of Verona</a>'
+            notes:
+              - '03/2025 – 06/2025, a.y. 2024/2025'
+              - '<a href="https://www.corsi.univr.it/?ent=cs&id=419&menu=studiare&tab=insegnamenti&codins=4S008227&idOi=189274&aa=2024/2025&discr=&discrCd" target="_blank">Course page</a>'
             start: 2025-03
             end: 2025-06
           - name: Software Engineering
             detail: B.Sc. Computer Science
+            where: '<a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">B.Sc. Computer Science, University of Verona</a>'
+            notes:
+              - '03/2025 – 06/2025, a.y. 2024/2025'
+              - '<a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=189211&aa=2024/2025&discr=null&discrCd=null" target="_blank">Course page</a>'
             start: 2025-03
             end: 2025-06
           - name: Programming II
             detail: B.Sc. Computer Science
+            where: '<a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">B.Sc. Computer Science, University of Verona</a>'
+            notes:
+              - '11/2024 – 02/2025, a.y. 2024/2025'
+              - '<a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=189212&aa=2024/2025" target="_blank">Course page</a>'
             start: 2024-11
             end: 2025-02
           - name: Programming
             detail: B.Sc. Bioinformatics
+            where: '<a href="https://www.corsi.univr.it/?ent=cs&id=419" target="_blank">B.Sc. Bioinformatics, University of Verona</a>'
+            notes:
+              - '11/2024 – 02/2025, a.y. 2024/2025'
+              - '<a href="https://www.corsi.univr.it/?ent=cs&id=419&menu=studiare&tab=insegnamenti&codiceCs=S23&codins=10030&crediti=12.0&aa=2024/2025" target="_blank">Course page</a>'
             start: 2024-11
             end: 2025-02
           - name: Software Engineering
             detail: B.Sc. Bioinformatics
+            where: '<a href="https://www.corsi.univr.it/?ent=cs&id=419" target="_blank">B.Sc. Bioinformatics, University of Verona</a>'
+            notes:
+              - '04/2024 – 06/2024, a.y. 2023/2024'
+              - '<a href="https://www.corsi.univr.it/?ent=cs&id=419&menu=studiare&tab=insegnamenti&codiceCs=S23&codins=4S008227&crediti=12.0&aa=2023/2024" target="_blank">Course page</a>'
             start: 2024-04
             end: 2024-06
           - name: Software Engineering
             detail: B.Sc. Computer Science
+            where: '<a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">B.Sc. Computer Science, University of Verona</a>'
+            notes:
+              - '03/2024 – 06/2024, a.y. 2023/2024'
+              - '<a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=176679&aa=2023/2024&discr=null&discrCd=null" target="_blank">Course page</a>'
             start: 2024-03
             end: 2024-06
           - name: Programming with laboratory
             detail: B.Sc. Applied Mathematics
+            where: '<a href="https://www.corsi.univr.it/?ent=cs&id=418" target="_blank">B.Sc. Applied Mathematics, University of Verona</a>'
+            notes:
+              - '03/2024 – 07/2024, a.y. 2023/2024'
+              - '<a href="https://www.corsi.univr.it/?ent=cs&id=418&menu=studiare&tab=insegnamenti&codiceCs=S20&codins=4S02751&crediti=12.0&aa=2023/2024" target="_blank">Course page</a>'
             start: 2024-03
             end: 2024-07
           - name: Software Engineering
             detail: B.Sc. Computer Science, Bioinformatics
+            where: 'B.Sc. <a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">Computer Science</a> and <a href="https://www.corsi.univr.it/?ent=cs&id=419" target="_blank">Bioinformatics</a>, University of Verona'
+            notes:
+              - '03/2023 – 06/2023, a.y. 2022/2023'
+              - '<a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=163941&aa=2022/2023&discr=null&discrCd=null" target="_blank">Course page</a>'
             start: 2023-03
             end: 2023-06
           - name: Programming II
             detail: B.Sc. Computer Science
+            where: '<a href="https://www.corsi.univr.it/?ent=cs&id=420" target="_blank">B.Sc. Computer Science, University of Verona</a>'
+            notes:
+              - '10/2022 – 02/2023, a.y. 2022/2023'
+              - '<a href="https://www.corsi.univr.it/?ent=cs&id=420&menu=studiare&tab=insegnamenti&codins=4S003714&idOi=163942&aa=2022/2023&discr=null&discrCd=null" target="_blank">Course page</a>'
             start: 2022-10
             end: 2023-02
       - name: Educator

@@ -249,11 +249,12 @@
 
   /* il pannello che si apre sotto la riga: dove, e poi le note dei dati.
      Senza note resta quello che diceva il tooltip: dettaglio e periodo. */
-  function pannello(v) {
+  /* sotto = il corso di laurea sta gia' sotto il nome della riga: non si ripete */
+  function pannello(v, sotto) {
     var d = document.createElement('div');
     d.className = 'xp__det';
     var righe = (v.notes && v.notes.length) ? v.notes
-              : [v.detail, periodo(v)].filter(function (t) { return t; });
+              : [sotto ? '' : v.detail, periodo(v)].filter(function (t) { return t; });
     d.innerHTML = (v.where ? '<div class="xp__dove">' + v.where + '</div>' : '') +
                   '<ul><li>' + righe.join('</li><li>') + '</li></ul>';
     return d;
@@ -287,7 +288,7 @@
     r.appendChild(b);
     var tr = traccia(v, tinta);
     r.appendChild(tr);
-    var det = pannello(v);
+    var det = pannello(v, !!(classe && classe.indexOf('child') >= 0));
     function apri() {
       var ap = !det.classList.contains('xp__det--on');
       det.classList.toggle('xp__det--on', ap);
