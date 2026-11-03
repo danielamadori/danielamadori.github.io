@@ -42,6 +42,8 @@
           padding:.18em .5em .18em .3em;color:var(--ink);line-height:1.25}
 .xp__nome:focus-visible{outline:2px solid var(--edu);outline-offset:2px;border-radius:3px}
 .xp__row--child .xp__nome{padding-left:1.5em;font-size:.92em}
+.xp__testo{display:block}
+.xp__sotto{display:block;font-size:.85em;line-height:1.25;color:var(--thin)}
 .xp__row--strong .xp__nome{font-weight:700;color:var(--edu-soft)}
 .xp__row--aperta .xp__caret{transform:rotate(90deg)}
 .xp__track{cursor:pointer}
@@ -264,7 +266,18 @@
     b.type = 'button';
     b.setAttribute('aria-expanded', 'false');
     b.innerHTML = '<span class="xp__caret">▶</span><span class="xp__testo"></span>';
-    b.lastChild.textContent = v.name;
+    var testo = b.lastChild;
+    var nome = document.createElement('span');
+    nome.textContent = v.name;
+    testo.appendChild(nome);
+    /* nei turni di tutorato il corso di laurea si vede sempre: i nomi degli
+       insegnamenti si ripetono, e' quello che distingue una riga dall'altra */
+    if (classe && classe.indexOf('child') >= 0 && v.detail) {
+      var sotto = document.createElement('span');
+      sotto.className = 'xp__sotto';
+      sotto.textContent = v.detail;
+      testo.appendChild(sotto);
+    }
     b.addEventListener('mousemove', function (e) {
       mostra(e, v.name, (v.detail ? v.detail + '<br>' : '') + periodo(v));
     });
