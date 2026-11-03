@@ -15,7 +15,7 @@ redirect_from:
 
 {% include base_path %}
 
-{% include experience-timeline.html from="2025-07" %}
+{% include experience-timeline.html from="2025-07" flat="true" %}
 
 {% for post in site.publications reversed %}
   {% include archive-single.html %}

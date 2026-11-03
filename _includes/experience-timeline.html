@@ -4,13 +4,14 @@
   Uso:  {% include experience-timeline.html %}                 tutti i gruppi
         {% include experience-timeline.html skip="publications" %}   senza le pubblicazioni
         {% include experience-timeline.html from="2025-07" %}        solo da quella data in poi
+        {% include experience-timeline.html flat="true" %}          senza fasce, per data
 
   L'asse e' spezzato: il tratto fra il 2018 e il 2021, dove non succede quasi
   nulla, occupa una frazione fissa della larghezza (axis.break_share) invece
   della sua durata reale. La rottura e' segnata sul disegno.
 {% endcomment %}
 
-<div class="xp" data-skip="{{ include.skip | default: '' }}" data-from="{{ include.from | default: '' }}" aria-label="Timeline of education, work and publications">
+<div class="xp" data-skip="{{ include.skip | default: '' }}" data-from="{{ include.from | default: '' }}" data-flat="{{ include.flat | default: '' }}" aria-label="Timeline of education, work and publications">
   <div class="xp__axis" aria-hidden="true"></div>
   <div class="xp__body"></div>
 </div>
@@ -136,6 +137,8 @@
   var radice = tutte[tutte.length - 1];
   if (!radice || !dati) return;
   var salta = (radice.dataset.skip || '').split(/[,\s]+/).filter(Boolean);
+  /* piatta: niente fasce, tutte le righe in un elenco solo ordinato per data */
+  var PIATTA = radice.dataset.flat === 'true';
 
   var A = dati.axis;
   /* da "2024-03" a 2024.1666… */
@@ -345,82 +348,121 @@
     griglia.appendChild(l);
   });
   corpo.appendChild(griglia);
-  gruppi.forEach(function (g) {
-    if (salta.indexOf(g.id) >= 0) return;
+  /* Una voce: riga semplice, oppure gruppo richiudibile (il tutorato). */
+  function disegnaVoce(box, v, g) {
+    if (v.collapsible && v.children) {
+      var r = document.createElement('div');
+      r.className = 'xp__row';
+      var b = document.createElement('button');
+      b.className = 'xp__toggle';
+      b.type = 'button';
+      b.setAttribute('aria-expanded', 'false');
+      b.innerHTML = '<span class="xp__caret">▶</span>' + v.name +
+                    ' <span class="xp__count">' + v.children.length +
+                    (v.detail ? ' · ' + v.detail : '') + '</span>';
+      b.addEventListener('click', function () {
+        var aperto = radice.dataset.open === 'tutoring';
+        radice.dataset.open = aperto ? '' : 'tutoring';
+        b.setAttribute('aria-expanded', String(!aperto));
+      });
+      r.appendChild(b);
+      /* chiuso: una barra sola per ogni turno, sulla stessa riga */
+      var tr = document.createElement('div');
+      tr.className = 'xp__track';
+      v.children.forEach(function (c) {
+        var s = document.createElement('span');
+        s.className = 'xp__bar xp__bar--work-soft';
+        var a = Math.max(pos(anno(c.start)), 0), z = pos(anno(c.end));
+        s.style.left = a.toFixed(3) + '%';
+        s.style.width = Math.max(z - a, 0.5).toFixed(3) + '%';
+        s.addEventListener('mousemove', function (e) {
+          mostra(e, c.name, (c.detail ? c.detail + '<br>' : '') + periodo(c));
+        });
+        s.addEventListener('mouseleave', nascondi);
+        tr.appendChild(s);
+      });
+      r.appendChild(tr);
+      box.appendChild(r);
+      var kids = document.createElement('div');
+      kids.className = 'xp__kids';
+      v.children.forEach(function (c) {
+        kids.appendChild(riga(c, 'work-soft', ' xp__row--child'));
+      });
+      box.appendChild(kids);
+    } else {
+      box.appendChild(riga(v, g.id === 'education' ? 'edu' : 'work',
+                           v.kind === 'edu-soft' ? ' xp__row--strong' : ''));
+    }
+  }
+
+  /* le tinte presenti fra le voci, nell'ordine della legenda. I rombi delle
+     annotazioni, come la tesi, non contano: non sono una categoria */
+  function tinteDi(coppie) {
+    var tinte = [];
+    coppie.forEach(function (c) {
+      (function raccogli(v) {
+        var k = (v.kind || (c.g.id === 'education' ? 'edu' : 'work')).replace(/-(soft|light)$/, '');
+        if (nomiTinta[k] && tinte.indexOf(k) < 0) tinte.push(k);
+        if (v.children) v.children.forEach(raccogli);
+      })(c.v);
+    });
+    return tinte.sort(function (a, b) { return ordineTinta[a] - ordineTinta[b]; });
+  }
+
+  var rombo = {};
+  (dati.legend || []).forEach(function (v) { if (v.shape === 'diamond') rombo[v.kind] = 1; });
+  function chiavi(tinte, conNome) {
+    return tinte.map(function (k) {
+      return '<span class="xp__key xp__key--' + k + (rombo[k] ? ' xp__key--diamond' : '') + '"></span>' +
+             (conNome ? '<span class="xp__kname">' + nomiTinta[k] + '</span>' : '');
+    }).join('');
+  }
+
+  function sezione() {
     var box = document.createElement('section');
     box.className = 'xp__group';
     var h = document.createElement('div');
     h.className = 'xp__glabel';
     box.appendChild(h);
+    box.intestazione = h;
+    return box;
+  }
 
-    g.items.forEach(function (v) {
-      if (v.collapsible && v.children) {
-        var r = document.createElement('div');
-        r.className = 'xp__row';
-        var b = document.createElement('button');
-        b.className = 'xp__toggle';
-        b.type = 'button';
-        b.setAttribute('aria-expanded', 'false');
-        b.innerHTML = '<span class="xp__caret">▶</span>' + v.name +
-                      ' <span class="xp__count">' + v.children.length +
-                      (v.detail ? ' · ' + v.detail : '') + '</span>';
-        b.addEventListener('click', function () {
-          var aperto = radice.dataset.open === 'tutoring';
-          radice.dataset.open = aperto ? '' : 'tutoring';
-          b.setAttribute('aria-expanded', String(!aperto));
-        });
-        r.appendChild(b);
-        /* chiuso: una barra sola per ogni turno, sulla stessa riga */
-        var tr = document.createElement('div');
-        tr.className = 'xp__track';
-        v.children.forEach(function (c) {
-          var s = document.createElement('span');
-          s.className = 'xp__bar xp__bar--work-soft';
-          var a = Math.max(pos(anno(c.start)), 0), z = pos(anno(c.end));
-          s.style.left = a.toFixed(3) + '%';
-          s.style.width = Math.max(z - a, 0.5).toFixed(3) + '%';
-          s.addEventListener('mousemove', function (e) {
-            mostra(e, c.name, (c.detail ? c.detail + '<br>' : '') + periodo(c));
-          });
-          s.addEventListener('mouseleave', nascondi);
-          tr.appendChild(s);
-        });
-        r.appendChild(tr);
-        box.appendChild(r);
+  /* per ordinare: la data di inizio; per il tutorato richiudibile, il turno piu' recente */
+  function quando(v) {
+    if (v.children && v.children.length) {
+      return v.children.reduce(function (m, c) { return Math.max(m, anno(c.start)); }, -1e9);
+    }
+    return anno(v.start);
+  }
 
-        var kids = document.createElement('div');
-        kids.className = 'xp__kids';
-        v.children.forEach(function (c) {
-          kids.appendChild(riga(c, 'work-soft', ' xp__row--child'));
-        });
-        box.appendChild(kids);
-      } else {
-        box.appendChild(riga(v, g.id === 'education' ? 'edu' : 'work',
-                             v.kind === 'edu-soft' ? ' xp__row--strong' : ''));
-      }
-    });
-    /* le tinte delle voci del gruppo, accanto al suo titolo: una sola tinta ->
-       solo il quadratino, piu' di una -> quadratino e nome. I rombi delle
-       annotazioni, come la tesi, non contano: non sono una categoria del gruppo */
-    var tinte = [];
-    (function raccogli(voci) {
-      voci.forEach(function (v) {
-        var k = (v.kind || (g.id === 'education' ? 'edu' : 'work')).replace(/-(soft|light)$/, '');
-        if (nomiTinta[k] && tinte.indexOf(k) < 0) tinte.push(k);
-        if (v.children) raccogli(v.children);
-      });
-    })(g.items);
-    tinte.sort(function (a, b) { return ordineTinta[a] - ordineTinta[b]; });
-    var rombo = {};
-    (dati.legend || []).forEach(function (v) { if (v.shape === 'diamond') rombo[v.kind] = 1; });
-    var chiavi = tinte.map(function (k) {
-      return '<span class="xp__key xp__key--' + k + (rombo[k] ? ' xp__key--diamond' : '') + '"></span>' +
-             (tinte.length > 1 ? '<span class="xp__kname">' + nomiTinta[k] + '</span>' : '');
-    }).join('');
-    h.innerHTML = tinte.length > 1 ? g.label + chiavi : chiavi + g.label;
-
-    corpo.appendChild(box);
+  var coppie = [];
+  gruppi.forEach(function (g) {
+    if (salta.indexOf(g.id) >= 0) return;
+    g.items.forEach(function (v) { coppie.push({v: v, g: g}); });
   });
+
+  if (PIATTA) {
+    /* niente fasce: una sola sezione, le righe dalla piu' recente alla piu' vecchia,
+       e in testa la legenda di tutte le tinte invece dei titoli dei gruppi */
+    coppie.sort(function (a, b) { return quando(b.v) - quando(a.v); });
+    var unica = sezione();
+    unica.intestazione.innerHTML = chiavi(tinteDi(coppie), true);
+    coppie.forEach(function (c) { disegnaVoce(unica, c.v, c.g); });
+    corpo.appendChild(unica);
+  } else {
+    gruppi.forEach(function (g) {
+      if (salta.indexOf(g.id) >= 0) return;
+      var box = sezione();
+      var mie = coppie.filter(function (c) { return c.g === g; });
+      mie.forEach(function (c) { disegnaVoce(box, c.v, c.g); });
+      var tinte = tinteDi(mie);
+      box.intestazione.innerHTML = tinte.length > 1
+        ? g.label + chiavi(tinte, true)
+        : chiavi(tinte, false) + g.label;
+      corpo.appendChild(box);
+    });
+  }
   /* la soglia e' sulla larghezza del componente: in home la colonna del testo
      e' molto piu' stretta della finestra e la media query non bastava */
   function misura() {
