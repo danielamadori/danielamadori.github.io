@@ -284,13 +284,15 @@
   /* il pannello che si apre sotto la riga: dove, e poi le note dei dati.
      Senza note resta quello che diceva il tooltip: dettaglio e periodo. */
   /* sotto = il corso di laurea sta gia' sotto il nome della riga: non si ripete */
+  /* un evento puntuale non ripete il periodo: sarebbe il solo mese di inizio, e
+     nelle pubblicazioni il dettaglio porta gia' la data della conferenza per esteso */
   function pannello(v, sotto) {
     var d = document.createElement('div');
     d.className = 'xp__det';
     var righe = (v.notes && v.notes.length) ? v.notes
-              : [sotto ? '' : v.detail, periodo(v)].filter(function (t) { return t; });
+              : [sotto ? '' : v.detail, v.point ? '' : periodo(v)].filter(function (t) { return t; });
     d.innerHTML = (v.where ? '<div class="xp__dove">' + v.where + '</div>' : '') +
-                  '<ul><li>' + righe.join('</li><li>') + '</li></ul>';
+                  (righe.length ? '<ul><li>' + righe.join('</li><li>') + '</li></ul>' : '');
     return d;
   }
 
