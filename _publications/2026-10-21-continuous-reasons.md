@@ -17,11 +17,12 @@ excerpt: >-
   of disjoint cubes, each carrying a small final OBDD. We compare this compile-once, read-many
   approach with existing sample-wise optimization methods in a preliminary experimental study.
 date: 2026-10-21
-venue: '17th International Conference on Scalable Uncertainty Management (SUM 2026), Athens, Greece — Springer LNAI, in press'
-citation: 'Amadori, D., Chini, E., Sala, P. (2026). &quot;Continuous Reasons for Random Forests via Budgeted Ordered Binary Decision Diagrams Compilation.&quot; <i>17th International Conference on Scalable Uncertainty Management (SUM 2026)</i>, Springer LNAI. In press.'
+venue: '17th International Conference on Scalable Uncertainty Management (SUM 2026), Athens, Greece, LNAI vol. 17188, pp. 346-360'
+paperurl: 'https://link.springer.com/chapter/10.1007/978-3-032-43514-9_23'
+citation: 'Amadori, D., Chini, E., Sala, P. (2026). &quot;Continuous Reasons for Random Forests via Budgeted Ordered Binary Decision Diagrams Compilation.&quot; <i>17th International Conference on Scalable Uncertainty Management (SUM 2026)</i>, LNAI vol. 17188, pp. 346-360.'
 ---
-Presented at SUM 2026 (NTUA, Athens, 21-23 October 2026). **The Springer LNAI proceedings are not
-out yet**, so there is no DOI to link to for now.
+Presented at SUM 2026 (NTUA, Athens, 21-23 October 2026) and published by Springer on 5 November
+2026, in LNAI vol. 17188, pp. 346-360. The printed volume carries the 2027 imprint year.
 
 The classification relation of the forest is compiled into Ordered Binary Decision Diagrams once;
 the continuous reason of a single sample is then obtained from the shared diagram by a
@@ -30,4 +31,4 @@ diagram becomes a tree of disjoint cubes.
 
 The code is available online: [RandomForest-Symbolic-Compiler](https://github.com/danielamadori/RandomForest-Symbolic-Compiler)
 
-Recommended citation: Amadori, D., Chini, E., Sala, P. (2026). "Continuous Reasons for Random Forests via Budgeted Ordered Binary Decision Diagrams Compilation." <i>17th International Conference on Scalable Uncertainty Management (SUM 2026)</i>, Springer LNAI. In press.
+Recommended citation: Amadori, D., Chini, E., Sala, P. (2026). "Continuous Reasons for Random Forests via Budgeted Ordered Binary Decision Diagrams Compilation." <i>17th International Conference on Scalable Uncertainty Management (SUM 2026)</i>, LNAI vol. 17188, pp. 346-360.
